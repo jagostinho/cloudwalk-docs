@@ -28,7 +28,6 @@ class Routes
       { "url" => "manager/transactions-monitor",                         "view_path" => "manager/transactions_monitor"},
       # CloudWalk IDE
       { "url" => "ide/overview",                                         "view_path" => "ide/overview"},
-      { "url" => "ide/emulator",                                         "view_path" => "ide/emulator"},
       # CloudWalk CLI
       { "url" => "cli/setup",                                            "view_path" => "cli/setup"},
       { "url" => "cli/creating-a-new-app",                               "view_path" => "cli/creating_a_new_app"},
