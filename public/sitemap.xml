@@ -73,9 +73,6 @@
   <loc>https://docs.cloudwalk.io/en/ide/overview</loc>
 </url>
 <url>
-  <loc>https://docs.cloudwalk.io/en/ide/emulator</loc>
-</url>
-<url>
   <loc>https://docs.cloudwalk.io/en/cli/setup</loc>
 </url>
 <url>
@@ -146,15 +143,6 @@
 </url>
 <url>
   <loc>https://docs.cloudwalk.io/en/api/v1/transactions</loc>
-</url>
-<url>
-  <loc>https://docs.cloudwalk.io/en/guides/transactions-patterns</loc>
-</url>
-<url>
-  <loc>https://docs.cloudwalk.io/en/guides/emulator-card-swipe</loc>
-</url>
-<url>
-  <loc>https://docs.cloudwalk.io/en/guides/emulator-serial-ports</loc>
 </url>
 <url>
   <loc>https://docs.cloudwalk.io/en/guides/using-http-headers</loc>
@@ -541,21 +529,6 @@
   <loc>https://docs.cloudwalk.io/en/posxml/commands/wait</loc>
 </url>
 <url>
-  <loc>https://docs.cloudwalk.io/en/guides/transactions-patterns/overview</loc>
-</url>
-<url>
-  <loc>https://docs.cloudwalk.io/en/guides/transactions-patterns/anomalies-report</loc>
-</url>
-<url>
-  <loc>https://docs.cloudwalk.io/en/guides/transactions-patterns/patterns-chart</loc>
-</url>
-<url>
-  <loc>https://docs.cloudwalk.io/en/guides/transactions-patterns/advanced-settings</loc>
-</url>
-<url>
-  <loc>https://docs.cloudwalk.io/en/guides/transactions-patterns/notifications-settings</loc>
-</url>
-<url>
   <loc>https://docs.cloudwalk.io/pt-BR/introduction</loc>
 </url>
 <url>
@@ -620,9 +593,6 @@
 </url>
 <url>
   <loc>https://docs.cloudwalk.io/pt-BR/ide/overview</loc>
-</url>
-<url>
-  <loc>https://docs.cloudwalk.io/pt-BR/ide/emulator</loc>
 </url>
 <url>
   <loc>https://docs.cloudwalk.io/pt-BR/cli/setup</loc>
@@ -695,15 +665,6 @@
 </url>
 <url>
   <loc>https://docs.cloudwalk.io/pt-BR/api/v1/transactions</loc>
-</url>
-<url>
-  <loc>https://docs.cloudwalk.io/pt-BR/guides/transactions-patterns</loc>
-</url>
-<url>
-  <loc>https://docs.cloudwalk.io/pt-BR/guides/emulator-card-swipe</loc>
-</url>
-<url>
-  <loc>https://docs.cloudwalk.io/pt-BR/guides/emulator-serial-ports</loc>
 </url>
 <url>
   <loc>https://docs.cloudwalk.io/pt-BR/guides/using-http-headers</loc>
@@ -1088,20 +1049,5 @@
 </url>
 <url>
   <loc>https://docs.cloudwalk.io/pt-BR/posxml/commands/wait</loc>
-</url>
-<url>
-  <loc>https://docs.cloudwalk.io/pt-BR/guides/transactions-patterns/overview</loc>
-</url>
-<url>
-  <loc>https://docs.cloudwalk.io/pt-BR/guides/transactions-patterns/anomalies-report</loc>
-</url>
-<url>
-  <loc>https://docs.cloudwalk.io/pt-BR/guides/transactions-patterns/patterns-chart</loc>
-</url>
-<url>
-  <loc>https://docs.cloudwalk.io/pt-BR/guides/transactions-patterns/advanced-settings</loc>
-</url>
-<url>
-  <loc>https://docs.cloudwalk.io/pt-BR/guides/transactions-patterns/notifications-settings</loc>
 </url>
 </urlset>
