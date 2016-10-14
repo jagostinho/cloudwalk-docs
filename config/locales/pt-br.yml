@@ -766,7 +766,7 @@ pt-BR:
       table_of_contents:
         getting_started: "Começando"
       getting_started:
-        paragraph_1: "Veja como é fácil começar a utilizar a plataforma CloudWalk! Siga os passos abaixo e você terá uma simples aplicação rodando em um emulador, se comunicando com o nosso servidor (autorizador) de testes."
+        paragraph_1: "Veja como é fácil começar a utilizar a plataforma CloudWalk! Siga os passos abaixo e você terá uma simples aplicação rodando em um terminal POS, se comunicando com o nosso servidor (autorizador) de testes."
         h3_1: "1. Crie uma conta gratuita"
         paragraph_2: "Primeiramente, crie uma conta gratuita, a qual lhe permitirá conhecer todos os componentes da plataforma:"
         paragraph_3: "<a href='https://manager.cloudwalk.io/users/sign_up' class='external'>https://manager.cloudwalk.io/users/sign_up</a>"
@@ -777,19 +777,21 @@ pt-BR:
         form:
           application_type_lbl: "Tipo de aplicação"
           application_type_val: "Aplicação"
-          application_name_lbl: "Nome da aplicação"
+          application_name_lbl: " Nome"
           application_name_val: "helloworld"
           description_lbl: "   Descrição"
           description_val: "Simples aplicação de eco"
+          format_lbl: "Formato"
+          format_val: "HTTP"
           label_lbl: "Rótulo"
           label_val: "HELLO WORLD"
           endpoint_lbl: "Autorizador"
           endpoint_val: "http://http-echo.cloudwalk.io"
         h3_3: "3. Adicione o código fonte"
         paragraph_7: "Com a aplicação POSXML criada, clique no botão <strong>Editar código fonte</strong>, que irá carregar a IDE CloudWalk, onde você poderá copiar e colar o seguinte código POSXML:"
-        h3_4: "4. Emule a aplicação!"
-        paragraph_8: "O último passo é verificar a aplicação no emulador. Clique no botão <strong>Emulate</strong> e se impressione!"
-        paragraph_9: "Observe que esta aplicação está somente enviando uma sequência de números (variável <span class='code'>sBufSend</span>), e nosso servidor de teste está adicionando a string <strong>CLOUDWALK</strong> na resposta."
+        h3_4: "4. Publique a aplicação"
+        paragraph_8: "Clique no botão <strong>Deploy</strong> para que a aplicação seja publicada."
+        paragraph_9: "O próximo passo é a configuração do terminal POS para que o mesmo faça o download da aplicação:"
     authorizer:
       description: Componente responsável pela validação das informações enviadas pelos terminais POS.
       overview:
