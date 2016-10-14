@@ -6,14 +6,6 @@
 
 <p class="intro"><%= I18n.t("introduction.index.intro") %></p>
 
-<a href="#video-player" data-toggle="modal"><img src="/img/videos/intro.png" alt="CloudWalk" class="video-frame" /></a>
-
-<div id="video-player" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-body">
-    <iframe id="player" width="560" height="315" src="https://www.youtube.com/embed/BGLJpc_PuKg?rel=0&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-  </div>
-</div>
-
 <h2><%= I18n.t("introduction.index.table_of_contents.getting_started") %></h2>
 
 <p><%= I18n.t("introduction.index.getting_started.paragraph_1") %></p>
@@ -57,12 +49,3 @@
     <%= link_to(I18n.t("menu.understanding_the_service.framework") + " &rarr;", "introduction/framework") %>
   </li>
 </ul>
-
-<% content_for :javascripts do %>
-  $('#video-player').on('show', function () {
-    document.getElementById('player').contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-  });
-  $('#video-player').on('hidden', function () {
-    document.getElementById('player').contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-  });
-<% end %>
