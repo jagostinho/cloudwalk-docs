@@ -133,6 +133,9 @@
   <loc>https://docs.cloudwalk.io/en/api/v1/parameters</loc>
 </url>
 <url>
+  <loc>https://docs.cloudwalk.io/en/api/v1/metacontents</loc>
+</url>
+<url>
   <loc>https://docs.cloudwalk.io/en/api/v1/assets</loc>
 </url>
 <url>
@@ -653,6 +656,9 @@
 </url>
 <url>
   <loc>https://docs.cloudwalk.io/pt-BR/api/v1/parameters</loc>
+</url>
+<url>
+  <loc>https://docs.cloudwalk.io/pt-BR/api/v1/metacontents</loc>
 </url>
 <url>
   <loc>https://docs.cloudwalk.io/pt-BR/api/v1/assets</loc>
