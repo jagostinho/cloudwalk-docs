@@ -610,30 +610,35 @@ puts "Response #{res.code} #{res.message}: #{res.body}"
 
 <p><%= I18n.t("api.v1.transactions.parsed_data.paragraph_1") %></p>
 
-<pre><code data-language="javascript">{
+<pre><code data-language="text">{
   acquirer: 'acquirer-name',
-  type: 'sale',                // Other options: cancellation, refund, etc
-  status: 'approved',          // Other options: denied
-  status_reason: '0111',       // Authorizer response code
-  capture_method: 'emv',       // Other options: magnetic-stripe, contactless, etc
-  amount: 10000,               // Transaction amount in cents
-  payment_method: 'debit',     // Other options: credit
+  type: 'sale',                 // Other options: cancellation, refund, etc
+  status: 'approved',           // Other options: denied
+  status_reason: '0111',        // Authorizer response code
+  capture_method: 'emv',        // Other options: magnetic-stripe, contactless, etc
+  amount: 10000,                // Transaction amount in cents
+  payment_method: 'debit',      // Other options: credit
   installment: {
-    type: null,                // Other options: merchant, issuer, etc
-    quantity: null             // Other options: 1, 2, 3, etc
+    type: null,                 // Other options: merchant, issuer, etc
+    quantity: null              // Other options: 1, 2, 3, etc
   },
-  nsu: '123456789',            // CloudWalk NSU, generated on the application
-  nsu_reference: '111222333',  // When present, represents the NSU of the transaction being cancelled
-  authorization_code: '123',   // Host authorization code
-  transaction_id: '987654321', // Host transaction ID (or NSU from host)
+  nsu: '123456789',             // CloudWalk NSU, generated on the application
+  nsu_reference: '111222333',   // When present, represents the NSU of the transaction being cancelled
+  authorization_code: '123',    // Host authorization code
+  transaction_id: '987654321',  // Host transaction ID (or NSU from host)
   card: {
-    holder_name: 'JOHN SMITH', // When present
-    brand: 'mastercard',       // Other options: visa, amex, etc
-    expiration_date: '0221',   // Month (2 bytes) and Year (2 bytes)
-    first_digits: '516230',    // First 6 digits (PCI compliance)
-    last_digits: '0948'        // Last 4 digits (PCI compliance)
+    holder_name: 'JOHN SMITH',  // When present
+    brand: 'mastercard',        // Other options: visa, amex, etc
+    expiration_date: '0221',    // Month (2 bytes) and Year (2 bytes)
+    first_digits: '516230',     // First 6 digits (PCI compliance)
+    last_digits: '0948'         // Last 4 digits (PCI compliance)
   },
-  metadata: {}                 // Some sort of acquirer specific information
+  merchant: {
+    id: '1152',                 // Merchant ID
+    document: '11222333000455', // Merchant document (CNPJ or CPF)
+    name: 'MERCHANT NAME'       // Merchant name
+  },
+  metadata: {}                  // Some sort of acquirer specific information
 }
 </code></pre>
 
