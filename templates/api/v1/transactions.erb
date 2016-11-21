@@ -610,6 +610,8 @@ puts "Response #{res.code} #{res.message}: #{res.body}"
 
 <p><%= I18n.t("api.v1.transactions.parsed_data.paragraph_1") %></p>
 
+<p class="note"><%= I18n.t("api.v1.transactions.parsed_data.paragraph_2") %></p>
+
 <pre><code data-language="text">{
   acquirer: 'acquirer-name',
   type: 'sale',                 // Other options: cancellation, refund, etc

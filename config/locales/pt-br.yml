@@ -364,6 +364,7 @@ pt-BR:
           transaction_type: tipo de registro
         parsed_data:
           paragraph_1: "Transações financeiras geralmente utilizam protocolos específicos como ISO8583 ou ISO20022. Para simplificar possíveis análises, os dados são parseados na coluna <strong>parsed</strong>, conforme o exemplo abaixo:"
+          paragraph_2: "Somente transações finalizadas com sucesso são parseadas (status = success)"
         table_of_contents:
           attributes: Atributos de uma transação
           index: Listagem de todas transações
