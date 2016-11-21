@@ -411,6 +411,41 @@ pt-BR:
         title: Developer API - Parâmetros
         update:
           paragraph_1: Modifica um parâmetro já existente.
+      metacontents:
+        attributes:
+          list:
+            created_at: Timestamp da criação do registro (ISO 8601)
+            created_by: ID do usuário que criou o registro
+            created_via: Canal utilizado para criar o registro (Interface ou API)
+            group_id: ID do grupo, se o meta conteúdo pertencer a um grupo
+            id: ID do registro
+            key: Chave do meta conteúdo
+            logical_number_id: ID do número lógico, se o metaconteúdo pertencer a um número lógico
+            updated_at: Timestamp da atualização do registro (ISO 8601)
+            value: Valor do metaconteúdo
+          paragraph_1: Um metaconteúdo pode ser referente a um <strong>número lógico</strong> ou a um <strong>grupo</strong>. O que irá determinar que tipo de metaconteúdo está sendo tratado é a definição do <strong>number</strong> (refere-se a um número lógico)  ou do <strong>name</strong> (refere-se a um grupo).
+          paragraph_2: 'Os seguintes atributos compõe um metaconteúdo:'
+        create:
+          paragraph_1: Cria um novo metaconteúdo.
+        description: Os metaconteúdos podem ser relacionados com um número lógico ou um grupo. Confira como as operações CRUD para parâmetros devem ser usadas.
+        destroy:
+          paragraph_1: Exclui um metaconteúdo.
+        group: Grupo
+        index:
+          paragraph_1: Retorna um array com todos os metaconteúdos de um grupo ou de um número lógico.
+        logical_number: Número lógico
+        show:
+          paragraph_1: Retorna os detalhes de um metaconteúdo específico.
+        table_of_contents:
+          attributes: Atributos de um metaconteúdo
+          create: Criação de um novo metaconteúdo
+          destroy: Exclusão de um metaconteúdo
+          index: Listagem de todos metaconteúdos
+          show: Busca de um metaconteúdo específico
+          update: Atualização de um metaconteúdo
+        title: Developer API - Metaconteúdos
+        update:
+          paragraph_1: Modifica um metaconteúdo já existente.
       push_notifications:
         title: Developer API - Notificações push
         description: Veja como enviar notificações push através da API CloudWalk.

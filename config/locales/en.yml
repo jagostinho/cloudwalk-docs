@@ -411,6 +411,41 @@ en:
         title: Developer API - Parameters
         update:
           paragraph_1: Update an existing parameter.
+      metacontents:
+        attributes:
+          list:
+            created_at: Timestamp in ISO 8601 format
+            created_by: User ID that created the record
+            created_via: Channel used to create the record (Interface or API)
+            group_id: Group ID, if the metacontent belongs to a group
+            id: Record ID
+            key: Metacontent key
+            logical_number_id: Logical number ID, if the metacontent belongs to a logical number
+            updated_at: Timestamp in ISO 8601 format
+            value: Metacontent value
+          paragraph_1: A metacontent can reference a <strong>logical number</strong> or a <strong>group</strong>. What defines the type of metacontent being handled is the definition of the properties <strong>number</strong> (refer to a logical number) or <strong>name</strong> (refer to a group).
+          paragraph_2: 'A metacontent have the following attributes:'
+        create:
+          paragraph_1: Create a new metacontent.
+        description: The metacontents can be related to a logical number or a group. Check how CRUD operations for parameters should be performed.
+        destroy:
+          paragraph_1: Delete a metacontent.
+        group: Group
+        index:
+          paragraph_1: Return an array with all metacontents of a group or logical number.
+        logical_number: Logical number
+        show:
+          paragraph_1: Return the details of a specific metacontent.
+        table_of_contents:
+          attributes: Metacontent attributes
+          create: Create a new metacontent
+          destroy: Delete a metacontent
+          index: List of all metacontents
+          show: Find a specific metacontent
+          update: Update a metacontent
+        title: Developer API - Metacontents
+        update:
+          paragraph_1: Update an existing metacontent.
       push_notifications:
         title: Developer API - Push notifications
         description: Check how to send push notifications though the CloudWalk API.

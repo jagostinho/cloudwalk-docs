@@ -52,6 +52,7 @@ class Routes
       { "url" => "api/v1/logical-numbers",                               "view_path" => "api/v1/logical_numbers"},
       { "url" => "api/v1/groups",                                        "view_path" => "api/v1/groups"},
       { "url" => "api/v1/parameters",                                    "view_path" => "api/v1/parameters"},
+      { "url" => "api/v1/metacontents",                                  "view_path" => "api/v1/metacontents"},
       { "url" => "api/v1/assets",                                        "view_path" => "api/v1/assets"},
       { "url" => "api/v1/push-notifications",                            "view_path" => "api/v1/push_notifications"},
       { "url" => "api/v1/users",                                         "view_path" => "api/v1/users"},
