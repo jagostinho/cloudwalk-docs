@@ -884,6 +884,7 @@ en:
         transactions: Transactions
         push_notifications: Push notifications
         parameters: Parameters
+        metacontents: Metacontents
         users: Users
     ide:
       group_name: CloudWalk IDE
