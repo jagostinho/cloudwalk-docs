@@ -296,7 +296,7 @@ pt-BR:
       logical_numbers:
         attributes:
           list:
-            app_ids: Lista com o ID dos aplicativos (do grupo) que o número lógico tem acesso
+            app_version_ids: Lista com o ID da versão dos aplicativos (do grupo) que o número lógico tem acesso
             created_at: Timestamp da criação do registro (ISO 8601)
             created_by: ID do usuário que criou o registro
             created_via: Canal utilizado para criar o registro (Interface ou API)

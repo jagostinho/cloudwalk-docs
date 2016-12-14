@@ -296,7 +296,7 @@ en:
       logical_numbers:
         attributes:
           list:
-            app_ids: List of app IDs (from group) that the logical number has access
+            app_version_ids: List of app version IDs (from group) that the logical number has access
             created_at: Timestamp in ISO 8601 format
             created_by: User ID that created the record
             created_via: Channel used to create the record (Interface or API)
