@@ -2776,7 +2776,7 @@ en:
             line_8: "www.cloudwalk.io/2"
         paragraph_1: "The second step refers to the logical number registration process:"
         paragraph_2: Access the CloudWalk Manager through <a href='https://manager.cloudwalk.io' class='external'>https://manager.cloudwalk.io</a>
-        paragraph_3: Select the section <a href='https://manager.cloudwalk.io/logical_numbers' class='external'>Logical numbers</a>
+        paragraph_3: Select the section <a href='https://manager.cloudwalk.io/logical-numbers' class='external'>Logical numbers</a>
         paragraph_4: 'Click the button: <strong>New logical number</strong>'
         paragraph_5: 'Enter the logical number (for example 0001) and click the button: <strong>Register logical number</strong>'
       step_3:

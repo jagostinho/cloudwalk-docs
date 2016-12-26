@@ -2776,7 +2776,7 @@ pt-BR:
             line_8: "www.cloudwalk.io/2"
         paragraph_1: "O segundo passo refere-se ao cadastramento do número lógico do dispositivo:"
         paragraph_2: Acesse o CloudWalk Manager em <a href='https://manager.cloudwalk.io' class='external'>https://manager.cloudwalk.io</a>
-        paragraph_3: Acesse o menu <a href='https://manager.cloudwalk.io/logical_numbers' class='external'>Números lógicos</a>
+        paragraph_3: Acesse o menu <a href='https://manager.cloudwalk.io/logical-numbers' class='external'>Números lógicos</a>
         paragraph_4: Clique no botão <strong>Novo número lógico</strong>
         paragraph_5: Informe o número lógico (por exemplo 0001) e clique no botão <strong>Cadastrar número lógico</strong>
       step_3:
