@@ -141,7 +141,7 @@ pt-BR:
         paragraph_1: 'Todas as operações disponíveis na interface API devem necessariamente utilizar uma API token válida. A geração/atualização da API token é feita diretamente no CloudWalk Manager, bastando para isso acessar o menu <strong>Minha conta</strong>, e então a opção <strong>API</strong>.'
         paragraph_2: 'Exemplo de URL:'
       rate_limiting:
-        paragraph_1: "Por padrão, um endereço IP pode efetuar até 5.000 requisições por hora. O status do limite de requisições pode ser verificado no cabeçalho HTTP de qualquer requisição:"
+        paragraph_1: "Por padrão, um endereço IP pode efetuar até 3.600 requisições por hora. O status do limite de requisições pode ser verificado no cabeçalho HTTP de qualquer requisição:"
       crud:
         paragraph_1: Para executar alguma operação em um recurso (aplicação, número lógico, grupo, etc), é feita uma requisição HTTP para uma URL utilizando o verbo HTTP apropriado.
         paragraph_2: 'Os quatro verbos HTTP utilizados em operações CRUD são:'

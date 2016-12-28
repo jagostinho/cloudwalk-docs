@@ -141,7 +141,7 @@ en:
         paragraph_1: 'All operations available on the API interface should always use a valid API token. The API token management is done directly on the CloudWalk Manager, by simply accessing the top menu <strong>My account</strong>, and then the option <strong>API</strong>.'
         paragraph_2: 'Example of URL:'
       rate_limiting:
-        paragraph_1: "By default, an IP address is allowed to perform up to 5,000 requests per hour. The rate limit status can be checked on the HTTP headers of any API request:"
+        paragraph_1: "By default, an IP address is allowed to perform up to 3,600 requests per hour. The rate limit status can be checked on the HTTP headers of any API request:"
       crud:
         paragraph_1: To perform an operation on a resource (app, logical number, group, etc), a HTTP request is made to the URL using the appropriate HTTP verb.
         paragraph_2: 'The four HTTP verbs used in CRUD operations are:'
