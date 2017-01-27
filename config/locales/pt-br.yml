@@ -293,40 +293,40 @@ pt-BR:
           paragraph_1: Retorna os detalhes de um grupo específico.
         update:
           paragraph_1: Modifica um grupo já existente.
-      receivers:
-        description: Confira como as operações CRUD para recebedores devem ser usadas.
-        title: Developer API - Recebedores
+      wallets:
+        description: Confira como as operações CRUD para carteiras digitais devem ser usadas.
+        title: Developer API - Carteiras digitais
         table_of_contents:
-          attributes: Atributos de um recebedor
-          create: Criação de um novo recebedor
-          index: Listagem de todos recebedores
-          show: Busca de um recebedor específico
-          update: Atualização de um recebedor
+          attributes: Atributos de uma carteira digital
+          create: Criação de uma nova carteira digital
+          index: Listagem de todas carteiras digitais
+          show: Busca de uma carteira digital específica
+          update: Atualização de uma carteira digital
         attributes:
           list:
             created_at: Timestamp da criação do registro (ISO 8601)
             created_by: ID do usuário que criou o registro
             created_via: Canal utilizado para criar o registro (Interface ou API)
             id: ID do registro
-            account_id: Identificador do recebedor
-            name: Nome do recebedor
+            account_id: Identificador da carteira digital
+            name: Nome do proprietário da carteira digital
             updated_at: Timestamp da atualização do registro (ISO 8601)
-            document_type: Tipo de documento (CPF ou CNPJ)
-            document_number: Número do documento (somente números)
+            document_type: Tipo de documento do proprietário (CPF ou CNPJ)
+            document_number: Número do documento do proprietário (somente números)
             bank_code: Código do banco
             agency: Agência (sem dígito)
             account_number: Número da conta
             account_number_check: Dígito verificador
             last_transfer: Data da última transferência
-          paragraph_1: 'Os seguintes atributos compõe um recebedor:'
+          paragraph_1: 'Os seguintes atributos compõe uma carteira digital:'
         create:
-          paragraph_1: Cria um novo recebedor.
+          paragraph_1: Cria uma nova carteira digital.
         index:
-          paragraph_1: Retorna um array com todos os recebedores.
+          paragraph_1: Retorna um array com todas as carteiras digitais.
         show:
-          paragraph_1: Retorna os detalhes de um recebedor específico.
+          paragraph_1: Retorna os detalhes de uma carteira digital específica.
         update:
-          paragraph_1: Modifica um recebedor já existente.
+          paragraph_1: Modifica uma carteira digital já existente.
       logical_numbers:
         attributes:
           list:
@@ -921,7 +921,7 @@ pt-BR:
         parameters: Parâmetros
         metacontents: Metaconteúdos
         users: Usuários
-        receivers: Recebedores
+        wallets: Carteiras digitais
     ide:
       group_name: CloudWalk IDE
       overview: Visão geral

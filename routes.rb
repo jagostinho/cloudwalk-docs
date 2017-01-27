@@ -57,7 +57,7 @@ class Routes
       { "url" => "api/v1/push-notifications",                            "view_path" => "api/v1/push_notifications"},
       { "url" => "api/v1/users",                                         "view_path" => "api/v1/users"},
       { "url" => "api/v1/transactions",                                  "view_path" => "api/v1/transactions"},
-      { "url" => "api/v1/receivers",                                     "view_path" => "api/v1/receivers"},
+      { "url" => "api/v1/wallets",                                       "view_path" => "api/v1/wallets"},
       # Guides
       { "url" => "guides/using-http-headers",                            "view_path" => "guides/using_http_headers"},
       # Help

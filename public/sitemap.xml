@@ -136,7 +136,7 @@
   <loc>https://docs.cloudwalk.io/en/api/v1/metacontents</loc>
 </url>
 <url>
-  <loc>https://docs.cloudwalk.io/en/api/v1/receivers</loc>
+  <loc>https://docs.cloudwalk.io/en/api/v1/wallets</loc>
 </url>
 <url>
   <loc>https://docs.cloudwalk.io/en/api/v1/assets</loc>
@@ -664,7 +664,7 @@
   <loc>https://docs.cloudwalk.io/pt-BR/api/v1/metacontents</loc>
 </url>
 <url>
-  <loc>https://docs.cloudwalk.io/pt-BR/api/v1/receivers</loc>
+  <loc>https://docs.cloudwalk.io/pt-BR/api/v1/wallets</loc>
 </url>
 <url>
   <loc>https://docs.cloudwalk.io/pt-BR/api/v1/assets</loc>

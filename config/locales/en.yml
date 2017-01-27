@@ -293,40 +293,40 @@ en:
           paragraph_1: Return the details of a specific group.
         update:
           paragraph_1: Update an existing group.
-      receivers:
-        description: Check how CRUD operations for receivers should be performed.
-        title: Developer API - Receivers
+      wallets:
+        description: Check how CRUD operations for wallets should be performed.
+        title: Developer API - Wallets
         table_of_contents:
-          attributes: Receiver attributes
-          create: Create a new receiver
-          index: List of all receivers
-          show: Find a specific receiver
-          update: Update a receiver
+          attributes: Wallet attributes
+          create: Create a new wallet
+          index: List of all wallets
+          show: Find a specific wallet
+          update: Update a wallet
         attributes:
           list:
             created_at: Timestamp in ISO 8601 format
             created_by: User ID that created the record
             created_via: Channel used to create the record (Interface or API)
             id: Record ID
-            name: Receiver name
-            account_id: Receiver identifier
+            name: Wallet's owner name
+            account_id: Wallet identifier
             updated_at: Timestamp in ISO 8601 format
-            document_type: Document type (CPF or CNPJ)
-            document_number: Document number (only numbers)
+            document_type: Wallet's owner document type (CPF or CNPJ)
+            document_number: Wallet's owner document number (only numbers)
             bank_code: Bank code
             agency: Agency number (without digit check)
             account_number: Account number
             account_number_check: Account number digit check
             last_transfer: Timestamp in ISO 8601 format
-          paragraph_1: 'A receiver have the following attributes:'
+          paragraph_1: 'A wallet have the following attributes:'
         create:
-          paragraph_1: Create a new receiver.
+          paragraph_1: Create a new wallet.
         index:
-          paragraph_1: Return an array with all receivers.
+          paragraph_1: Return an array with all wallets.
         show:
-          paragraph_1: Return the details of a specific receiver.
+          paragraph_1: Return the details of a specific wallet.
         update:
-          paragraph_1: Update an existing receiver.
+          paragraph_1: Update an existing wallet.
       logical_numbers:
         attributes:
           list:
@@ -921,7 +921,7 @@ en:
         parameters: Parameters
         metacontents: Metacontents
         users: Users
-        receivers: Receivers
+        wallets: Wallets
     ide:
       group_name: CloudWalk IDE
       overview: Overview
