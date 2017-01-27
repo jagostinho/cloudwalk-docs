@@ -292,7 +292,40 @@ en:
         show:
           paragraph_1: Return the details of a specific group.
         update:
-          paragraph_1: Update an existing logical number.
+          paragraph_1: Update an existing group.
+      receivers:
+        description: Check how CRUD operations for receivers should be performed.
+        title: Developer API - Receivers
+        table_of_contents:
+          attributes: Receiver attributes
+          create: Create a new receiver
+          index: List of all receivers
+          show: Find a specific receiver
+          update: Update a receiver
+        attributes:
+          list:
+            created_at: Timestamp in ISO 8601 format
+            created_by: User ID that created the record
+            created_via: Channel used to create the record (Interface or API)
+            id: Record ID
+            name: Receiver name
+            account_id: Receiver identifier
+            updated_at: Timestamp in ISO 8601 format
+            document_type: Document type (CPF or CNPJ)
+            document_number: Document number (only numbers)
+            bank_code: Bank code
+            agency: Agency number (without digit check)
+            account_number: Account number
+            account_number_check: Account number digit check
+          paragraph_1: 'A receiver have the following attributes:'
+        create:
+          paragraph_1: Create a new receiver.
+        index:
+          paragraph_1: Return an array with all receivers.
+        show:
+          paragraph_1: Return the details of a specific receiver.
+        update:
+          paragraph_1: Update an existing receiver.
       logical_numbers:
         attributes:
           list:
@@ -887,6 +920,7 @@ en:
         parameters: Parameters
         metacontents: Metacontents
         users: Users
+        receivers: Receivers
     ide:
       group_name: CloudWalk IDE
       overview: Overview

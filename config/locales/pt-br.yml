@@ -293,6 +293,39 @@ pt-BR:
           paragraph_1: Retorna os detalhes de um grupo específico.
         update:
           paragraph_1: Modifica um grupo já existente.
+      receivers:
+        description: Confira como as operações CRUD para recebedores devem ser usadas.
+        title: Developer API - Recebedores
+        table_of_contents:
+          attributes: Atributos de um recebedor
+          create: Criação de um novo recebedor
+          index: Listagem de todos recebedores
+          show: Busca de um recebedor específico
+          update: Atualização de um recebedor
+        attributes:
+          list:
+            created_at: Timestamp da criação do registro (ISO 8601)
+            created_by: ID do usuário que criou o registro
+            created_via: Canal utilizado para criar o registro (Interface ou API)
+            id: ID do registro
+            account_id: Identificador do recebedor
+            name: Nome do recebedor
+            updated_at: Timestamp da atualização do registro (ISO 8601)
+            document_type: Tipo de documento (CPF ou CNPJ)
+            document_number: Número do documento (somente números)
+            bank_code: Código do banco
+            agency: Agência (sem dígito)
+            account_number: Número da conta
+            account_number_check: Dígito verificador
+          paragraph_1: 'Os seguintes atributos compõe um recebedor:'
+        create:
+          paragraph_1: Cria um novo recebedor.
+        index:
+          paragraph_1: Retorna um array com todos os recebedores.
+        show:
+          paragraph_1: Retorna os detalhes de um recebedor específico.
+        update:
+          paragraph_1: Modifica um recebedor já existente.
       logical_numbers:
         attributes:
           list:
@@ -887,6 +920,7 @@ pt-BR:
         parameters: Parâmetros
         metacontents: Metaconteúdos
         users: Usuários
+        receivers: Recebedores
     ide:
       group_name: CloudWalk IDE
       overview: Visão geral
