@@ -317,6 +317,7 @@ en:
             agency: Agency number (without digit check)
             account_number: Account number
             account_number_check: Account number digit check
+            last_transfer: Timestamp in ISO 8601 format
           paragraph_1: 'A receiver have the following attributes:'
         create:
           paragraph_1: Create a new receiver.

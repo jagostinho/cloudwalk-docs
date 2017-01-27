@@ -317,6 +317,7 @@ pt-BR:
             agency: Agência (sem dígito)
             account_number: Número da conta
             account_number_check: Dígito verificador
+            last_transfer: Data da última transferência
           paragraph_1: 'Os seguintes atributos compõe um recebedor:'
         create:
           paragraph_1: Cria um novo recebedor.
