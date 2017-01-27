@@ -76,6 +76,11 @@
       <td><%= I18n.t("api.v1.wallets.attributes.list.last_transfer") %></td>
     </tr>
     <tr>
+      <td>metadata</td>
+      <td>JSON</td>
+      <td><%= I18n.t("api.v1.wallets.attributes.list.metadata") %></td>
+    </tr>
+    <tr>
       <td>updated_at</td>
       <td>String</td>
       <td><%= I18n.t("api.v1.wallets.attributes.list.updated_at") %></td>
@@ -159,6 +164,7 @@ puts "Response #{res.code} #{res.message}: #{res.body}"
             "account_number":"123456",
             "account_number_check":"7",
             "last_transfer":null,
+            "metadata":{},
             "created_by":1,
             "created_via":"api",
             "created_at":"2017-01-27T09:47:49Z",
@@ -177,6 +183,7 @@ puts "Response #{res.code} #{res.message}: #{res.body}"
             "account_number":"765432",
             "account_number_check":"1",
             "last_transfer":null,
+            "metadata":{},
             "created_by":1,
             "created_via":"api",
             "created_at":"2017-01-27T10:34:19Z",
@@ -240,6 +247,7 @@ puts "Response #{res.code} #{res.message}: #{res.body}"
       "account_number":"123456",
       "account_number_check":"7",
       "last_transfer":null,
+      "metadata":{},
       "created_by":1,
       "created_via":"api",
       "created_at":"2017-01-27T09:47:49Z",
@@ -321,6 +329,7 @@ puts "Response #{res.code} #{res.message}: #{res.body}"
       "account_number":"123456",
       "account_number_check":"7",
       "last_transfer":null,
+      "metadata":{},
       "created_by":1,
       "created_via":"api",
       "created_at":"2017-01-27T10:54:13Z",
@@ -396,6 +405,7 @@ puts "Response #{res.code} #{res.message}: #{res.body}"
       "account_number":"765432",
       "account_number_check":"1",
       "last_transfer":null,
+      "metadata":{},
       "created_by":1,
       "created_via":"api",
       "created_at":"2017-01-27T09:47:49Z",

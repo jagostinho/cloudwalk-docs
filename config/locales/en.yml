@@ -318,6 +318,7 @@ en:
             account_number: Account number
             account_number_check: Account number digit check
             last_transfer: Timestamp in ISO 8601 format
+            metadata: Wallet's metadata
           paragraph_1: 'A wallet have the following attributes:'
         create:
           paragraph_1: Create a new wallet.

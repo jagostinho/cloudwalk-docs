@@ -318,6 +318,7 @@ pt-BR:
             account_number: Número da conta
             account_number_check: Dígito verificador
             last_transfer: Data da última transferência
+            metadata: Metadados da carteira digital
           paragraph_1: 'Os seguintes atributos compõe uma carteira digital:'
         create:
           paragraph_1: Cria uma nova carteira digital.
