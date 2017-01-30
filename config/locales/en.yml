@@ -314,7 +314,7 @@ en:
             document_type: Wallet's owner document type (CPF or CNPJ)
             document_number: Wallet's owner document number (only numbers)
             bank_code: Bank code
-            agency: Agency number (without digit check)
+            branch_number: Branch number (without digit check)
             account_number: Account number
             account_number_check: Account number digit check
             last_transfer: Timestamp in ISO 8601 format

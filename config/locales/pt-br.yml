@@ -314,7 +314,7 @@ pt-BR:
             document_type: Tipo de documento do proprietário (CPF ou CNPJ)
             document_number: Número do documento do proprietário (somente números)
             bank_code: Código do banco
-            agency: Agência (sem dígito)
+            branch_number: Número da agência (sem dígito)
             account_number: Número da conta
             account_number_check: Dígito verificador
             last_transfer: Data da última transferência

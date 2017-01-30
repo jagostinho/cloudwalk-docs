@@ -56,9 +56,9 @@
       <td><%= I18n.t("api.v1.wallets.attributes.list.bank_code") %></td>
     </tr>
     <tr>
-      <td>agency</td>
+      <td>branch_number</td>
       <td>String</td>
-      <td><%= I18n.t("api.v1.wallets.attributes.list.agency") %></td>
+      <td><%= I18n.t("api.v1.wallets.attributes.list.branch_number") %></td>
     </tr>
     <tr>
       <td>account_number</td>
@@ -160,7 +160,7 @@ puts "Response #{res.code} #{res.message}: #{res.body}"
             "document_type":"cpf",
             "document_number":"40545255988",
             "bank_code":"001",
-            "agency":"0777",
+            "branch_number":"0777",
             "account_number":"123456",
             "account_number_check":"7",
             "last_transfer":null,
@@ -179,7 +179,7 @@ puts "Response #{res.code} #{res.message}: #{res.body}"
             "document_type":"cpf",
             "document_number":"35245384442",
             "bank_code":"001",
-            "agency":"0987",
+            "branch_number":"0987",
             "account_number":"765432",
             "account_number_check":"1",
             "last_transfer":null,
@@ -243,7 +243,7 @@ puts "Response #{res.code} #{res.message}: #{res.body}"
       "document_type":"cpf",
       "document_number":"40545255988",
       "bank_code":"001",
-      "agency":"0777",
+      "branch_number":"0777",
       "account_number":"123456",
       "account_number_check":"7",
       "last_transfer":null,
@@ -278,7 +278,7 @@ puts "Response #{res.code} #{res.message}: #{res.body}"
 -d "document_type=cpf" \
 -d "document_number=93136187881" \
 -d "bank_code=001" \
--d "agency=0123" \
+-d "branch_number=0123" \
 -d "account_number=123456" \
 -d "account_number_check=7"
 </code></pre>
@@ -295,7 +295,7 @@ payload = {
   "document_type" => "cpf",
   "document_number" => "93136187881",
   "bank_code" => "001",
-  "agency" => "0123",
+  "branch_number" => "0123",
   "account_number" => "123456",
   "account_number_check" => "7"
 }
@@ -325,7 +325,7 @@ puts "Response #{res.code} #{res.message}: #{res.body}"
       "document_type":"cpf",
       "document_number":"93136187881",
       "bank_code":"001",
-      "agency":"0123",
+      "branch_number":"0123",
       "account_number":"123456",
       "account_number_check":"7",
       "last_transfer":null,
@@ -357,7 +357,7 @@ puts "Response #{res.code} #{res.message}: #{res.body}"
 <div class="tab-pane active" id="update-tab1">
 <pre><code>$ curl -X PUT "https://api.cloudwalk.io/v1/wallets/1?access_token=$TOKEN" \
 -d "bank_code=002" \
--d "agency=0321" \
+-d "branch_number=0321" \
 -d "account_number=765432" \
 -d "account_number_check=1"
 </code></pre>
@@ -371,7 +371,7 @@ token = 'API_TOKEN'
 
 payload = {
   "bank_code" => "002",
-  "agency" => "0321",
+  "branch_number" => "0321",
   "account_number" => "765432",
   "account_number_check" => "1"
 }
@@ -401,7 +401,7 @@ puts "Response #{res.code} #{res.message}: #{res.body}"
       "document_type":"cpf",
       "document_number":"40545255988",
       "bank_code":"002",
-      "agency":"0321",
+      "branch_number":"0321",
       "account_number":"765432",
       "account_number_check":"1",
       "last_transfer":null,
