@@ -59,10 +59,10 @@ class Docs < Sinatra::Base
       c.csp = {
         default_src: %w('self'),
         font_src: %w('self' maxcdn.bootstrapcdn.com),
-        img_src: %w('self'),
+        img_src: %w('self' data: www.google-analytics.com),
         media_src: %w('self'),
         object_src: %w('self'),
-        script_src: %w('self' 'unsafe-inline' gist.github.com),
+        script_src: %w('self' 'unsafe-inline' 'unsafe-eval' gist.github.com ajax.cloudflare.com),
         style_src: %w('self' 'unsafe-inline' maxcdn.bootstrapcdn.com assets-cdn.github.com),
         base_uri: %w('self'),
         child_src: %w('self' www.youtube.com),
