@@ -2472,7 +2472,7 @@ pt-BR:
       models:
         list: "Modelos suportados: "
         verix: "Vx 510, Vx 610 e Vx 670"
-        evo_usb: "e265, VX 520, VX 675, VX 680, VX 685 e VX 690"
+        evo_usb: "E265, VX 520, VX 680, VX 685 e VX 690"
         evo_serial: "VX 805 e VX 820"
         telium_1: "EFT930G e EFT930S"
         telium_2: "ICT220, ICT250, IWL220, IWL250 e IWL280"
