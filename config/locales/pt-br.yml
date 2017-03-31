@@ -2410,7 +2410,7 @@ pt-BR:
       introduction: "Otimize seu tempo e utilize funções POSXML prontas em seus projetos."
       paragraph_1: "Você gosta de compartilhar? <a href='mailto:posxml@cloudwalk.io'>Envie-nos sua função</a>, e caso a mesma seja publicada, mencionaremos a autoria!"
       table_of_contents:
-        dynamic_menu: "Menú dinâmico"
+        dynamic_menu: "Menu dinâmico"
         cnpj_validation: "Validação de CNPJ"
         cpf_validation: "Validação de CPF"
         hide_credit_card_number: "Ocultar número do cartão de crédito"
