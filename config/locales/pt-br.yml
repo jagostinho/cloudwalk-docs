@@ -3032,24 +3032,34 @@ pt-BR:
         paragraph_5: Este passo é o que apresenta o maior índice de erros, pois muitas pessoas conectam o cabo serial na porta errada do POS ou na porta errada do PC, caso este possua duas portas COM.
         paragraph_6: Outro ponto importante é que a COM1 do seu computador pode estar sendo utilizada por outro processo, causando erro na hora da carga do CloudWalk Framework, e como o download só é possível através da COM1, ela deva estar corretamente configurada no Windows.
       preparing_the_device_usb:
-        paragraph_1: 'Ao ligar o terminal com o cabo de força, após exibir a tela inicial que exibe a versão do sistema operacional, ele permanecerá na seguinte tela:'
+        paragraph_1: 'Ao ligar o terminal com o cabo de força, após exibir a tela inicial que exibe a versão do sistema operacional e se o mesmo não possuir nenhuma aplicação instalada, ele permanecerá na seguinte tela:'
+        paragraph_2: 'Caso o terminal não permaneça na tela sugerida, coloque-o em <strong>modo de download</strong> seguindo os passos abaixo:'
+        paragraph_3: 'Pressione as teclas <strong>ENTER</strong> e <strong>7</strong> simultaneamente'
+        paragraph_4: 'Digite a senha fornecida pelo fornecedor do equipamento'
+        paragraph_5: 'Selecione o menu: <strong>3 Download</strong>'
+        paragraph_6: 'Pressione <strong>ENTER</strong> para confirmar o <strong>Group ID: _1</strong>'
+        paragraph_7: 'Digite novamente a senha fornecida pelo fornecedor do equipamento'
+        paragraph_8: 'Selecione o menu: <strong>1 Single-app</strong>'
+        paragraph_9: 'Selecione o menu: <strong>1 Full dnld</strong>'
+        paragraph_10: 'Copie o pacote de carga para o pendrive e conecte-o no terminal'
+        paragraph_11: 'Selecione o menu: <strong>5 USB Flash Memory</strong>'
       preparing_the_pendrive:
         paragraph_1: 'Para montar a carga do CloudWalk Framework no pendrive, siga o seguinte procedimento:'
         paragraph_2: 'Conecte o pendrive no computador'
         paragraph_3: 'Formate o pendrive (Formato FAT32)'
-        paragraph_4: 'Descompacte o pacote CloudWalk Framework baixado'
-        paragraph_5: 'Copie o arquivo: verifone_evo_usb/lib_cless/modelo(VX 520 ou VX 680)/<strong>VERIFONE.zip</strong> para a raiz do pendrive'
-        paragraph_6: 'Repita o processo com o arquivo: verifone_evo_usb/cw_framework_version/<strong>VERIFONE.zip</strong>'
+        paragraph_4: 'Descompacte o pacote <strong>verifone_evo.zip</strong> baixado'
+        paragraph_5: 'Copie o arquivo: <strong>VERIFONE.zip</strong> para a raiz do pendrive'
       prerequisites:
         cable: <strong>Cabo de carga Serial</strong>
+        adapter: <strong>Cabo adaptador:</strong> Micro USB para USB
         operating_system: <strong>Sistema operacional:</strong> Microsoft Windows XP SP3 ou superior (Vista, Seven, etc)
-        pendrive: <strong>Pendrive:</strong> Um pendrive comum, no máximo 4GB
+        pendrive: <strong>Pendrive:</strong> Um pendrive comum de 4GB ou superior
         serial_port: <strong>Porta serial disponível e configurada como COM1</strong>
       table_of_contents:
-        identify_os: Identificando a versão do SO do POS
-        loading_the_framework: Efetuando a carga no terminal POS
+        identify_os: Verificando a versão do OS e EOS do terminal
+        loading_the_framework: Carregando o CloudWalk Framework no terminal
+        loading_the_eos_usb: Atualizando o EOS
         preparing_the_device: Preparando o terminal POS
-        preparing_the_pendrive: Preparando o pendrive
         prerequisites: Pré-requisitos
         wiping_the_device: Limpando o terminal POS
       title: CloudWalk Framework - Verifone EVO
