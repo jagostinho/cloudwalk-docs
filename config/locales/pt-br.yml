@@ -2240,6 +2240,18 @@ pt-BR:
         parameters:
           parameter_1: <strong>buffer</strong> <span class='data-type'>[string]</span><br/>Buffer, hexadecimal, que será escrito na porta serial.
           parameter_2: <strong>variablehandle</strong> <span class='data-type'>[integer]</span><br/>Identificador da porta aberta.
+      xml_getelement:
+        description: Realiza a leitura do conteúdo de um arquivo XML.
+        paragraph_1: O comando <span class='code'>xml.getelement</span> é utilizado para realizar a leitura do conteúdo de um arquivo XML passando como parâmetro a tag desejada.
+        paragraph_2: 'No exemplo acima, a função <strong>fn_xml_new_string</strong> será responsável por armazenar em memória o conteúdo do XML. É necessário substituir os caracteres <strong><</strong> e <strong>></strong> por <strong>lt;</strong> e <strong>gt;</strong> pois são palavras reservadas.'
+        paragraph_3: 'A função <strong>fn_xml_save_message</strong> será responsável por abrir o arquivo XML desejado e escrever os dados. Caso o arquivo não exista, o mesmo será criado automaticamente.'
+        paragraph_4: 'Antes de finalizar, a função <strong>fn_xml_print_str</strong> irá ler as tags selecionadas e imprimi-las no padrão que desejar.'
+        parameters:
+          parameter_1: <strong>filename</strong> <span class='data-type'>[string]</span><br/>Nome do arquivo XML que deseja realizar a leitura.
+          parameter_2: <strong>parentnode</strong> <span class="data-type">[string]</span><br/>Tag raiz do XML de integração que deverá ser buscada.
+          parameter_3: <strong>childnode</strong> <span class='data-type'>[string]</span><br/>Tag que deverá ser lida e retornada.
+          parameter_4: <strong>variablevalue</strong> <span class="data-type">[string]</span><br/>Variável que irá armazenar o valor do elemento retornado.
+          parameter_5: <strong>variablereturn</strong> <span class='data-type'>[integer]</span><br/>Variável que irá armazenar o retorno do comando.
     commands_list:
       commands:
         groups:
