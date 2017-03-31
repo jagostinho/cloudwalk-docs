@@ -2252,6 +2252,17 @@ pt-BR:
           parameter_3: <strong>childnode</strong> <span class='data-type'>[string]</span><br/>Tag que deverá ser lida e retornada.
           parameter_4: <strong>variablevalue</strong> <span class="data-type">[string]</span><br/>Variável que irá armazenar o valor do elemento retornado.
           parameter_5: <strong>variablereturn</strong> <span class='data-type'>[integer]</span><br/>Variável que irá armazenar o retorno do comando.
+      json_getelement:
+        description: Realiza a leitura do conteúdo de um arquivo JSON.
+        paragraph_1: O comando <span class='code'>json.getelement</span> é utilizado para realizar a leitura do conteúdo de um arquivo JSON passando como parâmetro o campo desejado.
+        paragraph_2: 'No exemplo acima, a função <strong>fn_json_new_string</strong> será responsável por armazenar em memória o conteúdo JSON.'
+        paragraph_3: 'A função <strong>fn_json_save_message</strong> será responsável por abrir o arquivo JSON desejado e escrever os dados. Caso o arquivo não exista, o mesmo será criado automaticamente.'
+        paragraph_4: 'Antes de finalizar, a função <strong>fn_json_print_str</strong> irá ler os campos selecionados e imprimi-los no padrão que desejar.'
+        parameters:
+          parameter_1: <strong>filename</strong> <span class='data-type'>[string]</span><br/>Nome do arquivo JSON que deseja realizar a leitura.
+          parameter_2: <strong>jsonstring</strong> <span class="data-type">[string]</span><br/>Campo principal que deverá ser buscado.
+          parameter_3: <strong>jsonvalue</strong> <span class="data-type">[string]</span><br/>Variável que irá armazenar o valor do campo retornado.
+          parameter_4: <strong>variablereturn</strong> <span class='data-type'>[integer]</span><br/>Variável que irá armazenar o retorno do comando.
     commands_list:
       commands:
         groups:
