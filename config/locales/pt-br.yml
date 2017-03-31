@@ -3003,12 +3003,27 @@ pt-BR:
         paragraph_4: 'Enquanto a carga é efetuada, o terminal exibe o andamento do processo:'
         paragraph_5: Ao finalizar o processo de carga, a tela do DOS será fechada e o terminal será reiniciado algumas vezes, e em seguida será apresentado a tela de configuração da primeira execução.
       loading_the_framework_usb:
-        paragraph_1: 'Em terminais <strong>VX 520</strong>, conecte o pendrive no terminal na parte traseira conforme a figura abaixo:'
-        paragraph_2: 'Já os terminais <strong>VX 680</strong>, o local para conexão do pendrive se localiza no cabo que é utilizado para carregar a bateria do mesmo, conforme mostra a figura abaixo:'
-        paragraph_3: 'O terminal detectará o pendrive conectado, e exibirá a seguinte tela no display:'
-        paragraph_4: Escolha a opção 1, Sim, para começar o processo de carga
-        paragraph_5: Após carregar todos os arquivos, o terminal solicitará a retirada do pendrive
-        paragraph_6: Retire o pendrive e pressione a tecla enter(verde). O terminal reiniciará algumas vezes, e em seguida será apresentado a tela de configuração da primeira execução.
+        paragraph_1: 'Para realizar a carga do CloudWalk Framework através do pendrive, siga o seguinte procedimento:'
+        paragraph_2: 'Conecte o pendrive no computador e formate-o (Formato FAT32)'
+        paragraph_3: 'Descompacte o pacote <strong>verifone_evo.zip</strong> baixado'
+        paragraph_4: 'Copie apenas o arquivo: verifone_evo_usb/framework/<strong>VERIFONE.zip</strong> para a raiz do pendrive'
+        paragraph_5: Coloque o dispositivo em <a href='/pt-BR/framework/verifone-evo#preparing-the-pos'>modo de download</a>
+        paragraph_6: 'Através do cabo adaptador, conecte o pendrive no dispositivo'
+        paragraph_7: 'Em terminais <strong>VX 520</strong>, conecte o pendrive no terminal na parte traseira conforme a figura abaixo:'
+        paragraph_8: 'Já os terminais <strong>VX 680</strong>, o local para conexão do pendrive se localiza no cabo que é utilizado para carregar a bateria do mesmo, conforme mostra a figura abaixo:'
+        paragraph_9: 'O terminal deverá reconhecer o pendrive conectado e ler o pacote de carga. Confirme o download de todos os arquivos e aguarde o término da carga'
+        paragraph_10: 'Remova o pendrive e o cabo adaptador e pressione <strong>ENTER (Verde)</strong> para que o dispositivo reinicie'
+        paragraph_11: Assim que o terminal reiniciar, os arquivos e as assinaturas dos arquivos carregados serão verificados. Caso não apresente nenhum erro, o terminal estará pronto para iniciar a <a href='/pt-BR/framework/first-launch'>primeira execução</a> na plataforma CloudWalk
+      loading_the_eos_usb:
+        paragraph_1: 'Para realizar a carga do EOS através do pendrive, siga o seguinte procedimento:'
+        paragraph_2: 'Conecte o pendrive no computador e formate-o (Formato FAT32)'
+        paragraph_3: 'Descompacte o pacote <strong>verifone_evo.zip</strong> baixado'
+        paragraph_4: 'Copie apenas o arquivo: verifone_evo_usb/os_eos/eos/<strong>VERIFONE.zip</strong> para a raiz do pendrive'
+        paragraph_5: Coloque o dispositivo em <a href='/pt-BR/framework/verifone-evo#preparing-the-pos'>modo de download</a>
+        paragraph_6: 'Através do cabo adaptador, conecte o pendrive no dispositivo'
+        paragraph_7: 'O terminal deverá reconhecer o pendrive conectado e ler o pacote de carga. Confirme o download de todos os arquivos e aguarde o término da carga'
+        paragraph_8: 'Remova o pendrive e o cabo adaptador e pressione <strong>ENTER (Verde)</strong> para que o dispositivo reinicie'
+        paragraph_9: 'Assim que o terminal reiniciar, os arquivos e as assinaturas dos arquivos carregados serão verificados. Caso não apresente nenhum erro, o terminal voltará para a tela de download automaticamente'
       preparing_the_device:
         paragraph_1: Descompacte o pacote do CloudWalk Framework baixado em um diretório de sua preferência.
         paragraph_2: Este diretório precisa ser um diretório local (por exemplo C:\temp\dir), e não um diretório de rede (\\)
