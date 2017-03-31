@@ -3036,7 +3036,14 @@ pt-BR:
         one:
           title: "Se o processo de carregamento não iniciar, por favor, certifique-se de que:"
           paragraph_1: "O pendrive está formatado como <strong>FAT32</strong>;"
-          paragraph_2: "Somente o arquivo VERIFONE.zip está na raiz do pendrive."
+          paragraph_2: "Somente o arquivo <strong>VERIFONE.zip</strong> está na raiz do pendrive;"
+          paragraph_3: "O cabo adaptador pode estar com mal contato;"
+          paragraph_4: "O pendrive ou o terminal podem estar danificados."
+        two:
+          title: "Se a carga do CloudWalk Framework falhar, por favor, certifique-se de que:"
+          paragraph_1: "O pacote de arquivos <strong>EOS</strong> foi previamente carregado e atualizado;"
+          paragraph_2: "O pacote de arquivos <strong>Cless</strong> foi previamente carregado e atualizado;"
+          paragraph_3: "A <strong>assinatura</strong> dos arquivos é compatível com a assinatura requirida pelo terminal."
     verifone_verix:
       description: Processo passo a passo de instalação do CloudWalk Framework em terminais Verifone Vx 510, Vx 610 e Vx 670.
       identify_os:
