@@ -3003,7 +3003,7 @@ pt-BR:
         paragraph_4: 'Enquanto a carga é efetuada, o terminal exibe o andamento do processo:'
         paragraph_5: Ao finalizar o processo de carga, a tela do DOS será fechada e o terminal será reiniciado algumas vezes, e em seguida será apresentado a tela de configuração da primeira execução.
       loading_the_framework_usb:
-        paragraph_1: 'Para realizar a carga do CloudWalk Framework através do pendrive, siga o seguinte procedimento:'
+        paragraph_1: 'Para realizar a carga do CloudWalk Framework no terminal através de um pendrive, siga o seguinte procedimento:'
         paragraph_2: 'Conecte o pendrive no computador e formate-o (Formato FAT32)'
         paragraph_3: 'Descompacte o pacote <strong>verifone_evo.zip</strong> baixado'
         paragraph_4: 'Copie apenas o arquivo: verifone_evo_usb/framework/<strong>VERIFONE.zip</strong> para a raiz do pendrive'
@@ -3057,7 +3057,7 @@ pt-BR:
         serial_port: <strong>Porta serial disponível e configurada como COM1</strong>
       table_of_contents:
         identify_os: Verificando a versão do OS e EOS do terminal
-        loading_the_framework: Carregando o CloudWalk Framework no terminal
+        loading_the_framework: Carregando o CloudWalk Framework
         loading_the_eos_usb: Atualizando o EOS
         preparing_the_device: Preparando o terminal POS
         prerequisites: Pré-requisitos
