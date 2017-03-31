@@ -2984,17 +2984,17 @@ pt-BR:
     verifone_evo_vx805:
       description: Processo passo a passo de instalação do CloudWalk Framework em terminais Verifone VX 805.
     verifone_evo:
-      description: Processo passo a passo de instalação do CloudWalk Framework em terminais Verifone e265, VX 520, VX 675, VX 680, VX 685 e VX 690.
+      description: Processo passo a passo de instalação do CloudWalk Framework em terminais Verifone E265, VX 520, VX 680, VX 685 e VX 690.
       identify_os:
         os_version: Versão do sistema operacional
         eos_version: Extended Operating System Version
-        paragraph_1: Para identificar a versão do sistema operacional que está instalado em seu terminal, observe a segunda linha no visor da tela inicial, considerando os últimos 2 caracteres. Esta tela é exibida quando o terminal é ligado.
+        paragraph_1: Para identificar a versão do sistema operacional que está instalado em seu terminal, reinicie-o e segure a <strong>Tecla 5</strong> durante o boot.
         paragraph_2: Mantenha o sistema operacional dos seus terminais POS sempre atualizados. Terminais POS com o sistema operacional desatualizado podem ficar lentos e podem também apresentar problemas de comunicação.
         paragraph_3: 'Requisitos mínimos de sistema operacional para a instalação do CloudWalk Framework:'
         pos_model: Modelo POS
       installing_vx805_and_vx820: Para realizar a carga em terminais <strong>VX 805</strong> e <strong> VX 820 </strong>, confira <a href='/pt-BR/framework/verifone-evo-vx805'>este guia</a>.
       installing_vx805_and_vx820_intro: Este guia o conduzirá através do processo de instalação do CloudWalk Framework em terminais Verifone <strong>VX 805</strong> e <strong>VX 820</strong>. Atente-se aos pré-requisitos e siga o processo de instalação com atenção.
-      introduction: Este guia o conduzirá através do processo de instalação do CloudWalk Framework em terminais Verifone <strong>e265</strong>, <strong>VX 520</strong>, <strong>VX 675</strong>, <strong>VX 680</strong>, <strong>VX 685</strong> e <strong>VX 690</strong>. Atente-se aos pré-requisitos e siga o processo de instalação com atenção.
+      introduction: Este guia o conduzirá através do processo de instalação do CloudWalk Framework em terminais Verifone <strong>E265</strong>, <strong>VX 520</strong>, <strong>VX 680</strong>, <strong>VX 685</strong> e <strong>VX 690</strong>. Atente-se aos pré-requisitos e siga o processo de instalação com atenção.
       introduction_cable_terminals: Este guia o conduzirá através do processo de instalação do CloudWalk Framework em terminais Verifone <strong>VX 805</strong> e <strong>VX 820</strong>. Atente-se aos pré-requisitos e siga o processo de instalação com atenção.
       loading_the_framework:
         paragraph_1: Para dar início ao processo de carga, execute o arquivo carrega_na_flash.bat para carregar os certificados e o CloudWalk Framework.
