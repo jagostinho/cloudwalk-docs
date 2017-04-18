@@ -2240,6 +2240,29 @@ en:
         parameters:
           parameter_1: <strong>buffer</strong> <span class='data-type'>[string]</span><br/>Buffer, hexadecimal, which will be written on the serial port.
           parameter_2: <strong>variablehandle</strong> <span class='data-type'>[integer]</span><br/>Handle of the open door.
+      xml_getelement:
+        description: Read the XML data file.
+        paragraph_1: The command <span class='code'>xml.getelement</span> can be used to read the data of a XML file.
+        paragraph_2: "In the example above, the function <strong>fn_xml_new_string</strong> creates and allocate in memory the XML contents. Don't forget replace the following characters <strong><</strong> and <strong>></strong> for <strong>lt;</strong> and <strong>gt;</strong> because both are reserved words in the POSXML language."
+        paragraph_3: 'The function <strong>fn_xml_save_message</strong> opens the XML file and write all data. If the file not exists, it will be created automatically.'
+        paragraph_4: 'After finish the process, the function <strong>fn_xml_print_str</strong> will read the selected tags and print it.'
+        parameters:
+          parameter_1: <strong>filename</strong> <span class='data-type'>[string]</span><br/>Name of the XML file you want to read.
+          parameter_2: <strong>parentnode</strong> <span class="data-type">[string]</span><br/>XML root tag to be fetched.
+          parameter_3: <strong>childnode</strong> <span class='data-type'>[string]</span><br/>Tag that should be read and returned.
+          parameter_4: <strong>variablevalue</strong> <span class="data-type">[string]</span><br/>Variable that will store the value of the returned element.
+          parameter_5: <strong>variablereturn</strong> <span class='data-type'>[integer]</span><br/>Variable that will store the return of the command.
+      json_getelement:
+        description: Read the JSON data file.
+        paragraph_1: The command <span class='code'>json.getelement</span> is used to read the contents of a JSON file by passing the desired field as a parameter.
+        paragraph_2: 'In the example above, the function <strong>fn_json_new_string</strong> is responsible for storing JSON content in memory.'
+        paragraph_3: 'The function <strong>fn_json_save_message</strong> opens the JSON file and write all data. If the file not exists, it will be created automatically.'
+        paragraph_4: 'After finishing the process, the function <strong>fn_json_print_str</strong> will read the selected fields and print them on pattern you want.'
+        parameters:
+          parameter_1: <strong>filename</strong> <span class='data-type'>[string]</span><br/>Name of the JSON file you want to read.
+          parameter_2: <strong>jsonstring</strong> <span class="data-type">[string]</span><br/> Json element to search.
+          parameter_3: <strong>jsonvalue</strong> <span class="data-type">[string]</span><br/>Variable that will store the value of the returned element.
+          parameter_4: <strong>variablereturn</strong> <span class='data-type'>[integer]</span><br/>Variable that will store the return of the command.
     commands_list:
       commands:
         groups:
