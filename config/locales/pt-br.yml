@@ -239,6 +239,8 @@ pt-BR:
             enabled: Determina se o equipamento pode ou não acessar o CloudWalk (default true)
             id: ID do registro
             serial_number: Número de série do equipamento
+            logical_number_id: ID do número lógico associado com o dispositivo
+            meta: Informações adicionais como marca, modelo, etc
             updated_at: Timestamp da atualização do registro (ISO 8601)
           paragraph_1: 'Os seguintes atributos compõe um dispositivo:'
         create:

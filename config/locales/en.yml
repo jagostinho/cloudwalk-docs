@@ -239,6 +239,8 @@ en:
             enabled: Determine wether the device can access CloudWalk (default true)
             id: Record ID
             serial_number: Equipment serial number
+            logical_number_id: Logical Number ID associated with the device
+            meta: Additional information such as brand, model, etc
             updated_at: Timestamp in ISO 8601 format
           paragraph_1: 'A device have the following attributes:'
         create:
