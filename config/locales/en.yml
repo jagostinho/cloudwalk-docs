@@ -3003,12 +3003,27 @@ en:
         paragraph_4: 'While the charge is made, the device displays the progress of the case:'
         paragraph_5: At the end of the charging process, the DOS screen will close and the device will restart a few times, and will then present the first launch setup.
       loading_the_framework_usb:
-        paragraph_1: 'On terminals <strong>VX 520</strong>, connect the USB stick on the back of the terminal as shown below:'
-        paragraph_2: 'On terminals <strong>VX 680</strong>, the place to connect the USB stick is located on the recharge cable, as shown below:'
-        paragraph_3: 'The terminal will detect the connected stick, and the following screen is displayed:'
-        paragraph_4: Choose the option 1, Yes, to begin the loading process.
-        paragraph_5: After loading all the files, the terminal will request to remove the stick.
-        paragraph_6: Remove the pendrive and press Enter (green). The device will restart a few times, and then show the first launch setup.
+        paragraph_1: 'To load the CloudWalk Framework into the terminal via a USB stick, do the following:'
+        paragraph_2: 'Connect the USB stick to the computer and format it (FAT32)'
+        paragraph_3: 'Unzip the <strong> verifone_evo.zip </strong> package you downloaded'
+        paragraph_4: 'Copy only the file: verifone_evo_usb / framework / <strong> VERIFONE.zip </strong> to the root of the pendrive'
+        paragraph_5: Put the device in <a href='/en/framework/verifone-evo#preparing-the-pos'> download mode </a>
+        paragraph_6: 'Using the adapter cable, connect the pendrive to the device'
+        paragraph_7: 'On terminals <strong> VX 520 </strong>, connect the pendrive to the terminal on the back as shown below:'
+        paragraph_8: 'For the <strong> VX 680 </strong> terminals, the location for connecting the pendrive is located on the cable that is used to charge the battery, as shown in the figure below:'
+        paragraph_9: 'The terminal should recognize the connected pendrive and read the load packege. Confirm download of all files and wait for the upload to finish'
+        paragraph_10: 'Remove the USB pendrive and the adapter cable and press <strong> ENTER </strong> to restart the device'
+        paragraph_11: As soon as the terminal restarts, the files and signatures of the uploaded files will be checked. If there is no error, the terminal is ready to start <a href='/en/framework/first-launch'> first run </a> on the CloudWalk platform
+      loading_the_eos_usb:
+        paragraph_1: 'To load the EOS through the pendrive, do the following:'
+        paragraph_2: 'Connect the USB pendrive to the computer and format it (FAT32)'
+        paragraph_3: 'Unzip the <strong> verifone_evo.zip </strong> package you downloaded'
+        paragraph_4: 'Copy only the file: verifone_evo_usb / os_eos / eos / <strong> VERIFONE.zip </strong> to the root of the pendrive'
+        paragraph_5: Put the device in <a href='/en/framework/verifone-evo#preparing-the-pos'> download mode </a>
+        paragraph_6: 'Using the adapter cable, connect the pendrive to the device'
+        paragraph_7: 'The terminal should recognize the connected pendrive and read the load packet. Confirm download of all files and wait for the upload to finish'
+        paragraph_8: 'Remove the USB flash drive and the adapter cable and press <strong> ENTER </strong> to restart the device'
+        paragraph_9: 'As soon as the terminal restarts, the files and signatures of the uploaded files will be checked. If there is no error, the terminal will return to the download screen automatically'
       preparing_the_device:
         paragraph_1: Unpack the CloudWalk Framework from the choosen download directory.
         paragraph_2: This directory must be local directory (e.g. C:\temp\dir), and not network directory (\\)
