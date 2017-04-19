@@ -2133,7 +2133,7 @@ en:
           parameter_1: <strong>axisx</strong> <span class='data-type'>[integer]</span><br/>X-axis coordinate of the display, where the display was pressed.
           parameter_2: <strong>axisy</strong> <span class='data-type'>[integer]</span><br/>Y-axis coordinate of the display, where the display was pressed.
           parameter_3: <strong>variablekey</strong> <span class='data-type'>[string]</span><br/>The value of the key that was pressed.
-          parameter_4: '<strong>variablereturn</strong> <span class="data-type">[integer]</span><br/>Variable that will store the return code, where:<br/>1: display was pressed<br/> 0: display was not pressed<br/> 2: keyboard key pressed<br/> 3: timeout'
+          parameter_4: '<strong>variablereturn</strong> <span class="data-type">[integer]</span><br/>Variable that will store the return code, where:<br/>1: display was pressed<br/> -1: display was not pressed<br/> 2: keyboard key pressed'
         paragraph_2: In the example above, the command <strong>system.gettouchscreenkeyboard</strong> will return in iX the X coordinate and in iY the Y coordinate of the point pressed on the display. If the user pressed the keyboard, the command will return in sKey the value of the keyboard key pressed.
         paragraph_3: The command will return -1 in the event of a timeout.
       system_info:

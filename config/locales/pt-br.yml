@@ -2133,7 +2133,7 @@ pt-BR:
           parameter_1: <strong>axisx</strong> <span class='data-type'>[integer]</span><br/>Coordenada do eixo X do visor, onde o visor foi pressionado.
           parameter_2: <strong>axisy</strong> <span class='data-type'>[integer]</span><br/>Coordenada do eixo Y do visor, onde o visor foi pressionado.
           parameter_3: <strong>variablekey</strong> <span class='data-type'>[string]</span><br/>O valor da tecla pressionada.
-          parameter_4: '<strong>variablereturn</strong> <span class="data-type">[integer]</span><br/>Variável que irá armazenar o retorno do comando, onde:<br/>1: visor foi pressionado<br/> 0: visor não foi pressionado<br/> 2: tecla foi pressionada<br/> 3: timeout'
+          parameter_4: '<strong>variablereturn</strong> <span class="data-type">[integer]</span><br/>Variável que irá armazenar o retorno do comando, onde:<br/>1: visor foi pressionado<br/> -1: timeout<br/> 2: tecla foi pressionada'
         paragraph_2: No exemplo acima, o comando <strong>system.gettouchscreenkeyboard</strong> retornará em iXaxis a coordenada X e em iYaxis a coordenada Y do ponto pressionado no display. Se o usuario pressionar alguma tecla, o comando irá retornar em sKey o valor da tecla pressionada.
         paragraph_3: O comando irá retornar -1 em caso de timeout.
       system_info:
