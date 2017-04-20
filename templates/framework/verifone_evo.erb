@@ -8,7 +8,7 @@
   <li><a href="#pre-requisites"><%= I18n.t("framework.verifone_evo.table_of_contents.prerequisites") %></a></li>
   <li><a href="#identify-os"><%= I18n.t("framework.verifone_evo.table_of_contents.identify_os") %></a></li>
   <li><a href="#preparing-the-pos"><%= I18n.t("framework.verifone_evo.table_of_contents.preparing_the_device") %></a></li>
-  <li><a href="#preparing-the-pendrive"><%= I18n.t("framework.verifone_evo.table_of_contents.preparing_the_pendrive") %></a></li>
+  <li><a href="#loading-the-eos-usb"><%= I18n.t("framework.verifone_evo.table_of_contents.loading_the_eos_usb") %></a></li>
   <li><a href="#loading-the-framework"><%= I18n.t("framework.verifone_evo.table_of_contents.loading_the_framework") %></a></li>
   <li><a href="#troubleshooting"><%= I18n.t("troubleshooting") %></a></li>
   <li><a href="#first-launch"><%= I18n.t("framework.first_launch.title") %></a></li>
@@ -16,12 +16,10 @@
 
 <p><%= I18n.t("framework.verifone_evo.introduction") %></p>
 
-<p class="note"><%= I18n.t("framework.verifone_evo.installing_vx805_and_vx820") %></p>
-
 <h2 id="pre-requisites"><%= I18n.t("framework.verifone_evo.table_of_contents.prerequisites") %></h2>
 
 <ol>
-  <li><%= I18n.t("framework.verifone_evo.prerequisites.operating_system") %></li>
+  <li><%= I18n.t("framework.verifone_evo.prerequisites.adapter") %></li>
   <li><%= I18n.t("framework.verifone_evo.prerequisites.pendrive") %></li>
   <li><%= I18n.t("framework.package.select") %></li>
 </ol>
@@ -31,21 +29,7 @@
 <h2 id="identify-os"><%= I18n.t("framework.verifone_evo.table_of_contents.identify_os") %></h2>
 
 <p><%= I18n.t("framework.verifone_evo.identify_os.paragraph_1") %></p>
-
-<div class="pos">
-<pre>
-    VERIFONE VX 520
-       QT5G0240
-   29/03/2011 Verix
-
- COPYRIGHT 1997-2013
-      VERIFONE
- ALL RIGHTS RESERVED
-</pre>
-</div>
-
 <p><%= I18n.t("framework.verifone_evo.identify_os.paragraph_2") %></p>
-
 <p><%= I18n.t("framework.verifone_evo.identify_os.paragraph_3") %></p>
 
 <table cellpadding="0" cellspacing="0" border="0" class="table table-bordered table-hover">
@@ -60,22 +44,27 @@
     <tr>
       <td>VX 520</td>
       <td>QT520240</td>
-      <td>EOS011-01110410</td>
-    </tr>
-    <tr>
-      <td>VX 520 GPRS</td>
-      <td>QT5G0240</td>
-      <td>EOS011-01110410</td>
+      <td>2.8.7</td>
     </tr>
     <tr>
       <td>VX 680</td>
       <td>QT680240</td>
-      <td>EOS011-01110410</td>
+      <td>2.8.7</td>
     </tr>
     <tr>
-      <td>VX 675</td>
-      <td>QT650240</td>
-      <td>EOS011-01110410</td>
+      <td>VX 685</td>
+      <td>QT6Z0304</td>
+      <td>2.8.7</td>
+    </tr>
+    <tr>
+      <td>VX 690</td>
+      <td>QT690264</td>
+      <td>2.8.7</td>
+    </tr>
+    <tr>
+      <td>E265</td>
+      <td>QTE50320</td>
+      <td>2.8.7</td>
     </tr>
   </tbody>
 </table>
@@ -92,55 +81,57 @@ No *GO variable
 </pre>
 </div>
 
-<h2 id="preparing-the-pendrive"><%= I18n.t("framework.verifone_evo.table_of_contents.preparing_the_pendrive") %></h2>
-
-<p><%= I18n.t("framework.verifone_evo.preparing_the_pendrive.paragraph_1") %></p>
+<p><%= I18n.t("framework.verifone_evo.preparing_the_device_usb.paragraph_2") %></p>
 
 <ol>
-  <li><%= I18n.t("framework.verifone_evo.preparing_the_pendrive.paragraph_2") %></li>
-  <li><%= I18n.t("framework.verifone_evo.preparing_the_pendrive.paragraph_3") %></li>
-  <li><%= I18n.t("framework.verifone_evo.preparing_the_pendrive.paragraph_4") %></li>
-  <li><%= I18n.t("framework.verifone_evo.preparing_the_pendrive.paragraph_5") %></li>
-  <li><%= I18n.t("framework.verifone_evo.preparing_the_pendrive.paragraph_6") %></li>
+  <li><%= I18n.t("framework.verifone_evo.preparing_the_device_usb.paragraph_3") %></li>
+  <li><%= I18n.t("framework.verifone_evo.preparing_the_device_usb.paragraph_4") %></li>
+  <li><%= I18n.t("framework.verifone_evo.preparing_the_device_usb.paragraph_5") %></li>
+  <li><%= I18n.t("framework.verifone_evo.preparing_the_device_usb.paragraph_6") %></li>
+  <li><%= I18n.t("framework.verifone_evo.preparing_the_device_usb.paragraph_7") %></li>
+  <li><%= I18n.t("framework.verifone_evo.preparing_the_device_usb.paragraph_8") %></li>
+  <li><%= I18n.t("framework.verifone_evo.preparing_the_device_usb.paragraph_9") %></li>
+  <li><%= I18n.t("framework.verifone_evo.preparing_the_device_usb.paragraph_10") %></li>
+  <li><%= I18n.t("framework.verifone_evo.preparing_the_device_usb.paragraph_11") %></li>
+</ol>
+
+<h2 id="loading-the-eos-usb"><%= I18n.t("framework.verifone_evo.table_of_contents.loading_the_eos_usb") %></h2>
+
+<p><%= I18n.t("framework.verifone_evo.loading_the_eos_usb.paragraph_1") %></p>
+
+<ol>
+  <li><%= I18n.t("framework.verifone_evo.loading_the_eos_usb.paragraph_2") %></li>
+  <li><%= I18n.t("framework.verifone_evo.loading_the_eos_usb.paragraph_3") %></li>
+  <li><%= I18n.t("framework.verifone_evo.loading_the_eos_usb.paragraph_4") %></li>
+  <li><%= I18n.t("framework.verifone_evo.loading_the_eos_usb.paragraph_5") %></li>
+  <li><%= I18n.t("framework.verifone_evo.loading_the_eos_usb.paragraph_6") %></li>
+  <li><%= I18n.t("framework.verifone_evo.loading_the_eos_usb.paragraph_7") %></li>
+  <li><%= I18n.t("framework.verifone_evo.loading_the_eos_usb.paragraph_8") %></li>
+  <li><%= I18n.t("framework.verifone_evo.loading_the_eos_usb.paragraph_9") %></li>
 </ol>
 
 <h2 id="loading-the-framework"><%= I18n.t("framework.verifone_evo.table_of_contents.loading_the_framework") %></h2>
 
 <p><%= I18n.t("framework.verifone_evo.loading_the_framework_usb.paragraph_1") %></p>
 
-<img src="/img/verifone-evo/verifone-vx520-pendrive.jpg" class="img-tutorial img-polaroid" alt="Verifone EVO USB" />
+<ol>
+  <li><%= I18n.t("framework.verifone_evo.loading_the_framework_usb.paragraph_2") %></li>
+  <li><%= I18n.t("framework.verifone_evo.loading_the_framework_usb.paragraph_3") %></li>
+  <li><%= I18n.t("framework.verifone_evo.loading_the_framework_usb.paragraph_4") %></li>
+  <li><%= I18n.t("framework.verifone_evo.loading_the_framework_usb.paragraph_5") %></li>
+  <li><%= I18n.t("framework.verifone_evo.loading_the_framework_usb.paragraph_6") %></li>
+  <li><%= I18n.t("framework.verifone_evo.loading_the_framework_usb.paragraph_7") %></li>
 
-<p><%= I18n.t("framework.verifone_evo.loading_the_framework_usb.paragraph_2") %></p>
+  <img src="/img/verifone-evo/verifone-vx520-pendrive.jpg" class="img-tutorial img-polaroid" alt="Verifone EVO USB" />
 
-<img src="/img/verifone-evo/verifone-evo-vx680.jpg" class="img-tutorial img-polaroid" alt="Verifone EVO USB" />
+  <li><%= I18n.t("framework.verifone_evo.loading_the_framework_usb.paragraph_8") %></li>
 
-<p><%= I18n.t("framework.verifone_evo.loading_the_framework_usb.paragraph_3") %></p>
+  <img src="/img/verifone-evo/verifone-evo-vx680.jpg" class="img-tutorial img-polaroid" alt="Verifone EVO USB" />
 
-<div class="pos">
-<pre>
-VTM DOWNLOAD MGR G!
-
-DOWNLOAD ALL FILES
-From USB Flash Memory
-1) Yes
-2) No
-</pre>
-</div>
-
-<p><%= I18n.t("framework.verifone_evo.loading_the_framework_usb.paragraph_4") %></p>
-
-<div class="pos">
-<pre>
-VTM DOWNLOAD MGR G!
-
-USB Download Complete
-Remove USB Flash Mem
-</pre>
-</div>
-
-<p><%= I18n.t("framework.verifone_evo.loading_the_framework_usb.paragraph_5") %></p>
-
-<p><%= I18n.t("framework.verifone_evo.loading_the_framework_usb.paragraph_6") %></p>
+  <li><%= I18n.t("framework.verifone_evo.loading_the_framework_usb.paragraph_9") %></li>
+  <li><%= I18n.t("framework.verifone_evo.loading_the_framework_usb.paragraph_10") %></li>
+  <li><%= I18n.t("framework.verifone_evo.loading_the_framework_usb.paragraph_11") %></li>
+</ol>
 
 <h2 id="troubleshooting"><%= I18n.t("troubleshooting") %></h2>
 
@@ -148,6 +139,15 @@ Remove USB Flash Mem
 <ol>
   <li><%= I18n.t("framework.verifone_evo.troubleshooting.one.paragraph_1") %></li>
   <li><%= I18n.t("framework.verifone_evo.troubleshooting.one.paragraph_2") %></li>
+  <li><%= I18n.t("framework.verifone_evo.troubleshooting.one.paragraph_3") %></li>
+  <li><%= I18n.t("framework.verifone_evo.troubleshooting.one.paragraph_4") %></li>
+</ol>
+
+<h3><%= I18n.t("framework.verifone_evo.troubleshooting.two.title") %></h3>
+<ol>
+  <li><%= I18n.t("framework.verifone_evo.troubleshooting.two.paragraph_1") %></li>
+  <li><%= I18n.t("framework.verifone_evo.troubleshooting.two.paragraph_2") %></li>
+  <li><%= I18n.t("framework.verifone_evo.troubleshooting.two.paragraph_3") %></li>
 </ol>
 
 <h2 id="first-launch"><%= I18n.t("framework.first_launch.title") %></h2>

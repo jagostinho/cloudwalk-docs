@@ -2128,6 +2128,16 @@ pt-BR:
           parameter_3: '<strong>variablereturn</strong> <span class="data-type">[integer]</span><br/>Variável que irá armazenar o retorno do comando, onde:<br/> <span class="data-type"> 1: visor foi pressionado<br/> 0: visor não foi pressionado</span>'
         paragraph_2: No exemplo acima, o comando <strong>system.gettouchscreen</strong> retornará em iXaxis a coordenada X e em iYaxis a coordenada Y do ponto pressionado no display.
         paragraph_3: O laço de repetição é para garantir que o display foi pressionado.
+      system_gettouchscreenkeyboard:
+        description: Aguarde por um evento TOUCHSCREEN ou KEYBOARD.
+        paragraph_1: O comando <span class='code'>system.gettouchscreenkeyboard</span> permite aguardar por um evento TOUCHSCREEN ou KEYBOARD.
+        parameters:
+          parameter_1: <strong>axisx</strong> <span class='data-type'>[integer]</span><br/>Coordenada do eixo X do visor, onde o visor foi pressionado.
+          parameter_2: <strong>axisy</strong> <span class='data-type'>[integer]</span><br/>Coordenada do eixo Y do visor, onde o visor foi pressionado.
+          parameter_3: <strong>variablekey</strong> <span class='data-type'>[string]</span><br/>O valor da tecla pressionada.
+          parameter_4: '<strong>variablereturn</strong> <span class="data-type">[integer]</span><br/>Variável que irá armazenar o retorno do comando, onde:<br/>1: visor foi pressionado<br/> -1: timeout<br/> 2: tecla foi pressionada'
+        paragraph_2: No exemplo acima, o comando <strong>system.gettouchscreenkeyboard</strong> retornará em iXaxis a coordenada X e em iYaxis a coordenada Y do ponto pressionado no display. Se o usuario pressionar alguma tecla, o comando irá retornar em sKey o valor da tecla pressionada.
+        paragraph_3: O comando irá retornar -1 em caso de timeout.
       system_info:
         description: Busca de informações no sistema do POS (MAC Address, SIM ID, etc)
         paragraph_1: O comando <span class='code'>system.info</span> é usado para retornar informações do dispositivo.
@@ -2242,6 +2252,29 @@ pt-BR:
         parameters:
           parameter_1: <strong>buffer</strong> <span class='data-type'>[string]</span><br/>Buffer, hexadecimal, que será escrito na porta serial.
           parameter_2: <strong>variablehandle</strong> <span class='data-type'>[integer]</span><br/>Identificador da porta aberta.
+      xml_getelement:
+        description: Realiza a leitura do conteúdo de um arquivo XML.
+        paragraph_1: O comando <span class='code'>xml.getelement</span> é utilizado para realizar a leitura do conteúdo de um arquivo XML passando como parâmetro a tag desejada.
+        paragraph_2: 'No exemplo acima, a função <strong>fn_xml_new_string</strong> será responsável por armazenar em memória o conteúdo do XML. É necessário substituir os caracteres <strong><</strong> e <strong>></strong> por <strong>lt;</strong> e <strong>gt;</strong> pois são palavras reservadas.'
+        paragraph_3: 'A função <strong>fn_xml_save_message</strong> será responsável por abrir o arquivo XML desejado e escrever os dados. Caso o arquivo não exista, o mesmo será criado automaticamente.'
+        paragraph_4: 'Antes de finalizar, a função <strong>fn_xml_print_str</strong> irá ler as tags selecionadas e imprimi-las no padrão que desejar.'
+        parameters:
+          parameter_1: <strong>filename</strong> <span class='data-type'>[string]</span><br/>Nome do arquivo XML que deseja realizar a leitura.
+          parameter_2: <strong>parentnode</strong> <span class="data-type">[string]</span><br/>Tag raiz do XML de integração que deverá ser buscada.
+          parameter_3: <strong>childnode</strong> <span class='data-type'>[string]</span><br/>Tag que deverá ser lida e retornada.
+          parameter_4: <strong>variablevalue</strong> <span class="data-type">[string]</span><br/>Variável que irá armazenar o valor do elemento retornado.
+          parameter_5: <strong>variablereturn</strong> <span class='data-type'>[integer]</span><br/>Variável que irá armazenar o retorno do comando.
+      json_getelement:
+        description: Realiza a leitura do conteúdo de um arquivo JSON.
+        paragraph_1: O comando <span class='code'>json.getelement</span> é utilizado para realizar a leitura do conteúdo de um arquivo JSON passando como parâmetro o campo desejado.
+        paragraph_2: 'No exemplo acima, a função <strong>fn_json_new_string</strong> será responsável por armazenar em memória o conteúdo JSON.'
+        paragraph_3: 'A função <strong>fn_json_save_message</strong> será responsável por abrir o arquivo JSON desejado e escrever os dados. Caso o arquivo não exista, o mesmo será criado automaticamente.'
+        paragraph_4: 'Antes de finalizar, a função <strong>fn_json_print_str</strong> irá ler os campos selecionados e imprimi-los no padrão que desejar.'
+        parameters:
+          parameter_1: <strong>filename</strong> <span class='data-type'>[string]</span><br/>Nome do arquivo JSON que deseja realizar a leitura.
+          parameter_2: <strong>jsonstring</strong> <span class="data-type">[string]</span><br/>Campo principal que deverá ser buscado.
+          parameter_3: <strong>jsonvalue</strong> <span class="data-type">[string]</span><br/>Variável que irá armazenar o valor do campo retornado.
+          parameter_4: <strong>variablereturn</strong> <span class='data-type'>[integer]</span><br/>Variável que irá armazenar o retorno do comando.
     commands_list:
       commands:
         groups:
@@ -2412,7 +2445,7 @@ pt-BR:
       introduction: "Otimize seu tempo e utilize funções POSXML prontas em seus projetos."
       paragraph_1: "Você gosta de compartilhar? <a href='mailto:posxml@cloudwalk.io'>Envie-nos sua função</a>, e caso a mesma seja publicada, mencionaremos a autoria!"
       table_of_contents:
-        dynamic_menu: "Menú dinâmico"
+        dynamic_menu: "Menu dinâmico"
         cnpj_validation: "Validação de CNPJ"
         cpf_validation: "Validação de CPF"
         hide_credit_card_number: "Ocultar número do cartão de crédito"
@@ -2451,7 +2484,7 @@ pt-BR:
       models:
         list: "Modelos suportados: "
         verix: "Vx 510, Vx 610 e Vx 670"
-        evo_usb: "e265, VX 520, VX 675, VX 680, VX 685 e VX 690"
+        evo_usb: "E265, VX 520, VX 680, VX 685 e VX 690"
         evo_serial: "VX 805 e VX 820"
         telium_1: "EFT930G e EFT930S"
         telium_2: "ICT220, ICT250, IWL220, IWL250 e IWL280"
@@ -2891,7 +2924,7 @@ pt-BR:
         paragraph_2: Conecte o pendrive no computador
         paragraph_3: Formate o pendrive
         paragraph_4: Extraia o pacote do CloudWalk Framework baixado no inicio deste tutorial
-        sparagraph_5: Na pasta descompactada você irá encontrar uma pasta chamada 'CloudCloudWalk Framework', copie a pasta chamada TELIUM que se encontra nela para o pendrive
+        paragraph_5: Na pasta descompactada abra a pasta 'Framework' e copie a pasta TELIUM para o pendrive
       prerequisites:
         adapter: <strong>Adaptador USB:</strong> Necessário para fazer a instalação, é possível conseguir com o seu fornecedor.
         operating_system: <strong>Sistema operacional:</strong> Microsoft Windows XP SP3 ou superior (Vista, Seven, etc)
@@ -2935,7 +2968,7 @@ pt-BR:
         paragraph_2: Conecte o pendrive no computador
         paragraph_3: Formate o pendrive
         paragraph_4: Extraia o pacote do CloudWalk Framework baixado no inicio deste tutorial
-        paragraph_5: Na pasta descompactada você irá encontrar uma pasta chamada 'CloudCloudWalk Framework', copie a pasta chamada TELIUM que se encontra nela para o pendrive
+        paragraph_5: Na pasta descompactada abra a pasta 'Framework' e copie a pasta TELIUM para o pendrive
       prerequisites:
         adapter: <strong>Adaptador USB:</strong> Necessário somente para fazer a instalação no IWL220, IWL250 e IWL280
         operating_system: <strong>Sistema operacional:</strong> Microsoft Windows XP SP3 ou superior (Vista, Seven, etc)
@@ -2963,17 +2996,17 @@ pt-BR:
     verifone_evo_vx805:
       description: Processo passo a passo de instalação do CloudWalk Framework em terminais Verifone VX 805.
     verifone_evo:
-      description: Processo passo a passo de instalação do CloudWalk Framework em terminais Verifone e265, VX 520, VX 675, VX 680, VX 685 e VX 690.
+      description: Processo passo a passo de instalação do CloudWalk Framework em terminais Verifone E265, VX 520, VX 680, VX 685 e VX 690.
       identify_os:
         os_version: Versão do sistema operacional
         eos_version: Extended Operating System Version
-        paragraph_1: Para identificar a versão do sistema operacional que está instalado em seu terminal, observe a segunda linha no visor da tela inicial, considerando os últimos 2 caracteres. Esta tela é exibida quando o terminal é ligado.
+        paragraph_1: Para identificar a versão do sistema operacional que está instalado em seu terminal, reinicie-o e segure a <strong>Tecla 5</strong> durante o boot.
         paragraph_2: Mantenha o sistema operacional dos seus terminais POS sempre atualizados. Terminais POS com o sistema operacional desatualizado podem ficar lentos e podem também apresentar problemas de comunicação.
         paragraph_3: 'Requisitos mínimos de sistema operacional para a instalação do CloudWalk Framework:'
         pos_model: Modelo POS
       installing_vx805_and_vx820: Para realizar a carga em terminais <strong>VX 805</strong> e <strong> VX 820 </strong>, confira <a href='/pt-BR/framework/verifone-evo-vx805'>este guia</a>.
       installing_vx805_and_vx820_intro: Este guia o conduzirá através do processo de instalação do CloudWalk Framework em terminais Verifone <strong>VX 805</strong> e <strong>VX 820</strong>. Atente-se aos pré-requisitos e siga o processo de instalação com atenção.
-      introduction: Este guia o conduzirá através do processo de instalação do CloudWalk Framework em terminais Verifone <strong>e265</strong>, <strong>VX 520</strong>, <strong>VX 675</strong>, <strong>VX 680</strong>, <strong>VX 685</strong> e <strong>VX 690</strong>. Atente-se aos pré-requisitos e siga o processo de instalação com atenção.
+      introduction: Este guia o conduzirá através do processo de instalação do CloudWalk Framework em terminais Verifone <strong>E265</strong>, <strong>VX 520</strong>, <strong>VX 680</strong>, <strong>VX 685</strong> e <strong>VX 690</strong>. Atente-se aos pré-requisitos e siga o processo de instalação com atenção.
       introduction_cable_terminals: Este guia o conduzirá através do processo de instalação do CloudWalk Framework em terminais Verifone <strong>VX 805</strong> e <strong>VX 820</strong>. Atente-se aos pré-requisitos e siga o processo de instalação com atenção.
       loading_the_framework:
         paragraph_1: Para dar início ao processo de carga, execute o arquivo carrega_na_flash.bat para carregar os certificados e o CloudWalk Framework.
@@ -2982,12 +3015,27 @@ pt-BR:
         paragraph_4: 'Enquanto a carga é efetuada, o terminal exibe o andamento do processo:'
         paragraph_5: Ao finalizar o processo de carga, a tela do DOS será fechada e o terminal será reiniciado algumas vezes, e em seguida será apresentado a tela de configuração da primeira execução.
       loading_the_framework_usb:
-        paragraph_1: 'Em terminais <strong>VX 520</strong>, conecte o pendrive no terminal na parte traseira conforme a figura abaixo:'
-        paragraph_2: 'Já os terminais <strong>VX 680</strong>, o local para conexão do pendrive se localiza no cabo que é utilizado para carregar a bateria do mesmo, conforme mostra a figura abaixo:'
-        paragraph_3: 'O terminal detectará o pendrive conectado, e exibirá a seguinte tela no display:'
-        paragraph_4: Escolha a opção 1, Sim, para começar o processo de carga
-        paragraph_5: Após carregar todos os arquivos, o terminal solicitará a retirada do pendrive
-        paragraph_6: Retire o pendrive e pressione a tecla enter(verde). O terminal reiniciará algumas vezes, e em seguida será apresentado a tela de configuração da primeira execução.
+        paragraph_1: 'Para realizar a carga do CloudWalk Framework no terminal através de um pendrive, siga o seguinte procedimento:'
+        paragraph_2: 'Conecte o pendrive no computador e formate-o (Formato FAT32)'
+        paragraph_3: 'Descompacte o pacote <strong>verifone_evo.zip</strong> baixado'
+        paragraph_4: 'Copie apenas o arquivo: verifone_evo_usb/framework/<strong>VERIFONE.zip</strong> para a raiz do pendrive'
+        paragraph_5: Coloque o dispositivo em <a href='/pt-BR/framework/verifone-evo#preparing-the-pos'>modo de download</a>
+        paragraph_6: 'Através do cabo adaptador, conecte o pendrive no dispositivo'
+        paragraph_7: 'Em terminais <strong>VX 520</strong>, conecte o pendrive no terminal na parte traseira conforme a figura abaixo:'
+        paragraph_8: 'Já os terminais <strong>VX 680</strong>, o local para conexão do pendrive se localiza no cabo que é utilizado para carregar a bateria do mesmo, conforme mostra a figura abaixo:'
+        paragraph_9: 'O terminal deverá reconhecer o pendrive conectado e ler o pacote de carga. Confirme o download de todos os arquivos e aguarde o término da carga'
+        paragraph_10: 'Remova o pendrive e o cabo adaptador e pressione <strong>ENTER (Verde)</strong> para que o dispositivo reinicie'
+        paragraph_11: Assim que o terminal reiniciar, os arquivos e as assinaturas dos arquivos carregados serão verificados. Caso não apresente nenhum erro, o terminal estará pronto para iniciar a <a href='/pt-BR/framework/first-launch'>primeira execução</a> na plataforma CloudWalk
+      loading_the_eos_usb:
+        paragraph_1: 'Para realizar a carga do EOS através do pendrive, siga o seguinte procedimento:'
+        paragraph_2: 'Conecte o pendrive no computador e formate-o (Formato FAT32)'
+        paragraph_3: 'Descompacte o pacote <strong>verifone_evo.zip</strong> baixado'
+        paragraph_4: 'Copie apenas o arquivo: verifone_evo_usb/os_eos/eos/<strong>VERIFONE.zip</strong> para a raiz do pendrive'
+        paragraph_5: Coloque o dispositivo em <a href='/pt-BR/framework/verifone-evo#preparing-the-pos'>modo de download</a>
+        paragraph_6: 'Através do cabo adaptador, conecte o pendrive no dispositivo'
+        paragraph_7: 'O terminal deverá reconhecer o pendrive conectado e ler o pacote de carga. Confirme o download de todos os arquivos e aguarde o término da carga'
+        paragraph_8: 'Remova o pendrive e o cabo adaptador e pressione <strong>ENTER (Verde)</strong> para que o dispositivo reinicie'
+        paragraph_9: 'Assim que o terminal reiniciar, os arquivos e as assinaturas dos arquivos carregados serão verificados. Caso não apresente nenhum erro, o terminal voltará para a tela de download automaticamente'
       preparing_the_device:
         paragraph_1: Descompacte o pacote do CloudWalk Framework baixado em um diretório de sua preferência.
         paragraph_2: Este diretório precisa ser um diretório local (por exemplo C:\temp\dir), e não um diretório de rede (\\)
@@ -2996,24 +3044,34 @@ pt-BR:
         paragraph_5: Este passo é o que apresenta o maior índice de erros, pois muitas pessoas conectam o cabo serial na porta errada do POS ou na porta errada do PC, caso este possua duas portas COM.
         paragraph_6: Outro ponto importante é que a COM1 do seu computador pode estar sendo utilizada por outro processo, causando erro na hora da carga do CloudWalk Framework, e como o download só é possível através da COM1, ela deva estar corretamente configurada no Windows.
       preparing_the_device_usb:
-        paragraph_1: 'Ao ligar o terminal com o cabo de força, após exibir a tela inicial que exibe a versão do sistema operacional, ele permanecerá na seguinte tela:'
+        paragraph_1: 'Ao ligar o terminal com o cabo de força, após exibir a tela inicial que exibe a versão do sistema operacional e se o mesmo não possuir nenhuma aplicação instalada, ele permanecerá na seguinte tela:'
+        paragraph_2: 'Caso o terminal não permaneça na tela sugerida, coloque-o em <strong>modo de download</strong> seguindo os passos abaixo:'
+        paragraph_3: 'Pressione as teclas <strong>ENTER</strong> e <strong>7</strong> simultaneamente'
+        paragraph_4: 'Digite a senha fornecida pelo fornecedor do equipamento'
+        paragraph_5: 'Selecione o menu: <strong>3 Download</strong>'
+        paragraph_6: 'Pressione <strong>ENTER</strong> para confirmar o <strong>Group ID: _1</strong>'
+        paragraph_7: 'Digite novamente a senha fornecida pelo fornecedor do equipamento'
+        paragraph_8: 'Selecione o menu: <strong>1 Single-app</strong>'
+        paragraph_9: 'Selecione o menu: <strong>1 Full dnld</strong>'
+        paragraph_10: 'Copie o pacote de carga para o pendrive e conecte-o no terminal'
+        paragraph_11: 'Selecione o menu: <strong>5 USB Flash Memory</strong>'
       preparing_the_pendrive:
         paragraph_1: 'Para montar a carga do CloudWalk Framework no pendrive, siga o seguinte procedimento:'
         paragraph_2: 'Conecte o pendrive no computador'
         paragraph_3: 'Formate o pendrive (Formato FAT32)'
-        paragraph_4: 'Descompacte o pacote CloudWalk Framework baixado'
-        paragraph_5: 'Copie o arquivo: verifone_evo_usb/lib_cless/modelo(VX 520 ou VX 680)/<strong>VERIFONE.zip</strong> para a raiz do pendrive'
-        paragraph_6: 'Repita o processo com o arquivo: verifone_evo_usb/cw_framework_version/<strong>VERIFONE.zip</strong>'
+        paragraph_4: 'Descompacte o pacote <strong>verifone_evo.zip</strong> baixado'
+        paragraph_5: 'Copie o arquivo: <strong>VERIFONE.zip</strong> para a raiz do pendrive'
       prerequisites:
         cable: <strong>Cabo de carga Serial</strong>
+        adapter: <strong>Cabo adaptador:</strong> Micro USB para USB
         operating_system: <strong>Sistema operacional:</strong> Microsoft Windows XP SP3 ou superior (Vista, Seven, etc)
-        pendrive: <strong>Pendrive:</strong> Um pendrive comum, no máximo 4GB
+        pendrive: <strong>Pendrive:</strong> Um pendrive comum de 4GB ou superior
         serial_port: <strong>Porta serial disponível e configurada como COM1</strong>
       table_of_contents:
-        identify_os: Identificando a versão do SO do POS
-        loading_the_framework: Efetuando a carga no terminal POS
+        identify_os: Verificando a versão do OS e EOS do terminal
+        loading_the_framework: Carregando o CloudWalk Framework
+        loading_the_eos_usb: Atualizando o EOS
         preparing_the_device: Preparando o terminal POS
-        preparing_the_pendrive: Preparando o pendrive
         prerequisites: Pré-requisitos
         wiping_the_device: Limpando o terminal POS
       title: CloudWalk Framework - Verifone EVO
@@ -3038,7 +3096,14 @@ pt-BR:
         one:
           title: "Se o processo de carregamento não iniciar, por favor, certifique-se de que:"
           paragraph_1: "O pendrive está formatado como <strong>FAT32</strong>;"
-          paragraph_2: "Somente o arquivo VERIFONE.zip está na raiz do pendrive."
+          paragraph_2: "Somente o arquivo <strong>VERIFONE.zip</strong> está na raiz do pendrive;"
+          paragraph_3: "O cabo adaptador pode estar com mal contato;"
+          paragraph_4: "O pendrive ou o terminal podem estar danificados."
+        two:
+          title: "Se a carga do CloudWalk Framework falhar, por favor, certifique-se de que:"
+          paragraph_1: "O pacote de arquivos <strong>EOS</strong> foi previamente carregado e atualizado;"
+          paragraph_2: "O pacote de arquivos <strong>Cless</strong> foi previamente carregado e atualizado;"
+          paragraph_3: "A <strong>assinatura</strong> dos arquivos é compatível com a assinatura requirida pelo terminal."
     verifone_verix:
       description: Processo passo a passo de instalação do CloudWalk Framework em terminais Verifone Vx 510, Vx 610 e Vx 670.
       identify_os:

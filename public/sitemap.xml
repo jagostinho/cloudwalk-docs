@@ -304,6 +304,12 @@
   <loc>https://docs.cloudwalk.io/en/posxml/commands/file.read</loc>
 </url>
 <url>
+  <loc>https://docs.cloudwalk.io/en/posxml/commands/xml.getelement</loc>
+</url>
+<url>
+  <loc>https://docs.cloudwalk.io/en/posxml/commands/json.getelement</loc>
+</url>
+<url>
   <loc>https://docs.cloudwalk.io/en/posxml/commands/file.write</loc>
 </url>
 <url>
