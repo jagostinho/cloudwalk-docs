@@ -2385,7 +2385,7 @@ pt-BR:
       description: O CloudWalk Framework tem um sistema de arquivos do tipo WALK dbfile (arquivos de text em ambientes UNIX). Criando e editando arquivos. Use o utilitário EditDBFile para manipular arquivos WALK dbfile.
       presentation:
         paragraph_1: 'O CloudWalk Framework possui um sistema de arquivos que consegue manipular arquivos do tipo WALK dbfile, onde é possível criar e trabalhar com arquivos no seguinte formato:'
-        paragraph_2: Basicamente, seria o formato de arquivos texto em ambientes UNIX, onde o <span class='code'>\n</span>F representa a quebra de linha. O próprio arquivo de configuração do dispositivo (config.dat) é um arquivo WALK dbfile.
+        paragraph_2: Basicamente, seria o formato de arquivos texto em ambientes UNIX, onde o <span class='code'>\n</span> representa a quebra de linha. O próprio arquivo de configuração do dispositivo (config.dat) é um arquivo WALK dbfile.
       table_of_contents:
         creating_and_editing_files: Criando e editando arquivos
         presentation: Apresentação
