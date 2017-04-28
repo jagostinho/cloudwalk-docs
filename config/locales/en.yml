@@ -1916,7 +1916,7 @@ en:
         paragraph_1: The command <span class='code'>smartcard.insertcard</span> is used to check if a smart card is inserted in a given slot.
         paragraph_2: In the example above, the command <strong>smartcard.insertedcard</strong> checks whether or not the card is inserted in the defined slot. If there is no card in the slot, the return will be <strong>-2</strong>, otherwise it will be <strong>1</strong>.
         parameters:
-          parameter_1: '<strong>slot</strong> <span class="data-type">[integer]</span><br/>Defines which slot is used by the command.<ul><li>1: principal</li><li>2: sam1</li><li>3: sam2</li><li>4: sam3</li><li>5: sam4</li></ul> '
+          parameter_1: '<strong>slot</strong> <span class="data-type">[integer]</span><br/>Defines which slot is used by the command.<ul><li>1: main</li><li>2: sam1</li><li>3: sam2</li><li>4: sam3</li><li>5: sam4</li></ul> '
           parameter_2: <strong>variablereturn</strong> <span class='data-type'>[integer or string]</span><br/>Variable that will store the return of the command.
       smartcard_startreader:
         description: Starts the smart card reader and try to start the card
