@@ -972,6 +972,7 @@ pt-BR:
       pax_d200: PAX D200
       verifone_evo: Verifone EVO
       verifone_verix: Verifone Verix
+      gertec: Gertec
     manager:
       apps: Aplicações
       assets: Arquivos
@@ -2480,6 +2481,7 @@ pt-BR:
         tefti: "BRASIL - TEFTI"
         paytec: "BRASIL - Paytec"
         pax: "BRASIL - PAX"
+        gertec: "BRASIL - Gertec"
         other: "Outro fornecedor"
       models:
         list: "Modelos suportados: "
@@ -2489,6 +2491,8 @@ pt-BR:
         telium_1: "EFT930G e EFT930S"
         telium_2: "ICT220, ICT250, IWL220, IWL250 e IWL280"
         d200: "D200"
+        gpos400: GPOS400
+        mp20: MP20
     communication:
       paragraph_1: Rede local (Ethernet)
       paragraph_2: Linha discada (PPP)
@@ -3189,6 +3193,28 @@ pt-BR:
         step_1: "Antes de executar os comandos do XCB, é útil saber qual emulador/dispositivo está conectado no server XCB. Você pode gerar uma lista de emuladores/dispositivos conectados usando o comando:"
         step_2: "Use o modo serial para conectar com o emulador ou dispositivo:"
         step_3: "Instale o pacote da aplicação:"
+    gertec:
+      title: CloudWalk Framework - Gertec
+      description: Processo passo a passo de instalação do CloudWalk Framework no terminal Gertec.
+      introduction: Este guia o conduzirá através do processo de instalação do CloudWalk Framework em terminais Gertec. Atente-se aos pré-requisitos e siga o processo de instalação com atenção.
+      loading_the_framework:
+        paragraph_1: 'Executar CAPLoader_Tool/CAPLoader_Tool.exe'
+        paragraph_2: 'Selecione a porta serial a qual foi atribuida ao POS Gertec'
+        paragraph_3: 'Selecione o arquivo /gertec_gpos_400/os/OS_Update_GPOS400/FW/update_all.mmci no botão [...]'
+        paragraph_4: 'Clique em enviar'
+      preparing_the_device:
+        paragraph_1: Descompacte o pacote do CloudWalk Framework baixado em um diretório de sua preferência
+        paragraph_2: 'Coloque o terminal em modo de download, ao ligar o mesmo a tela abaixo será apresentada:'
+        paragraph_3: 'Siga os passo abaixo:<br/> -   Aperte 0<br/> - Selecione a opção 1. Download AP<br/> - Selecione RS232 or USB'
+        paragraph_4: Pronto o terminal está em modo de download.
+      prerequisites:
+        cable: <strong>Cabo:</strong> Cabo USB padrão 5 pinos
+        operating_system: <strong>Sistema operacional:</strong> Microsoft Windows XP SP3 ou superior (Vista, Seven, etc)
+        software: "<strong>CAPLoader_Tool</strong>, disponivel no pacote do framework"
+      table_of_contents:
+        loading_the_framework: Efetuando a carga no terminal POS
+        preparing_the_device: Preparando o terminal POS
+        prerequisites: Pré-requisitos
   manager:
     apps:
       description: O conceito de Aplicação no CloudWalk Manager, como o próprio nome sugere, define as aplicações disponíveis para serem utilizadas pelos terminais POS. Como cadastrar uma aplicação em 3 passos.
