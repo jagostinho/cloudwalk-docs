@@ -5,6 +5,7 @@
       <%= option_select "verifone", "Verifone", device_brand %>
       <%= option_select "ingenico", "Ingenico", device_brand %>
       <%= option_select "pax", "PAX", device_brand %>
+      <%= option_select "gertec", "Gertec", device_brand %>
     </select>
   </div>
 
@@ -84,6 +85,9 @@
     if((brand == sbrand) && (model == smodel)){
       toggle_action('file-request', 'open-guide');
       $('#file-request').prop('href', select_framework_package(sbrand, smodel, ssignature));
+    } else if ((sbrand == 'gertec') && (model == 'gpos400' || model == 'mp20')){
+      toggle_action('file-request', 'open-guide');
+      $('#file-request').prop('href', select_framework_package(sbrand, smodel, ssignature));
     } else {
       toggle_action('open-guide', 'file-request');
       $('#open-guide').prop('href', select_framework_guide(sbrand, smodel, ssignature));
@@ -114,6 +118,9 @@
       $('#model').append(new Option('Verix', 'verix'));
     } else if (sbrand == 'pax') {
       $('#model').append(new Option('D200', 'd200'));
+    } else if (sbrand == 'gertec') {
+      $('#model').append(new Option('GPOS400', 'gpos400'));
+      $('#model').append(new Option('MP20', 'mp20'));
     }else {
       $('#model').append(new Option('Telium 1', 'telium-1'));
       $('#model').append(new Option('Telium 2', 'telium-2'));
@@ -158,6 +165,12 @@
       break;
     case 'd200':
       list += '<%= I18n.t("framework.package.models.d200") %>'
+      break;
+    case 'gpos400':
+      list += '<%= I18n.t("framework.package.models.gpos400") %>'
+      break;
+    case 'mp20':
+      list += '<%= I18n.t("framework.package.models.mp20") %>'
       break;
     }
 
@@ -221,7 +234,10 @@
       return package + ' <%= I18n.t("framework.package.with_signature") %> ' + 'Paytec (Brasil)';
       break;
     case 'pax':
-      return package + ' <%= I18n.t("ramework.package.with_signature") %> ' + 'PAX (Brasil)';
+      return package + ' <%= I18n.t("framework.package.with_signature") %> ' + 'PAX (Brasil)';
+      break;
+    case 'gertec':
+      return package + ' <%= I18n.t("framework.package.with_signature") %> ' + 'GERTEC (Brasil)';
       break;
     default:
       return '<%= I18n.t("framework.package.binary") %> ' + package + ' (<%= I18n.t("framework.package.unsigned") %>)';
