@@ -972,6 +972,7 @@ en:
       pax_d200: PAX D200
       verifone_evo: Verifone EVO
       verifone_verix: Verifone Verix
+      gertec: Gertec
     manager:
       apps: Applications
       assets: Files
@@ -2479,7 +2480,8 @@ en:
       supplier:
         tefti: "BRAZIL - TEFTI"
         paytec: "BRAZIL - Paytec"
-        pax: "BRASIL - PAX"
+        pax: "BRAZIL - PAX"
+        gertec: "BRAZIL - Gertec"
         other: "Other supplier"
       models:
         list: "Supported models: "
@@ -2489,6 +2491,8 @@ en:
         telium_1: "EFT930G and EFT930S"
         telium_2: "ICT220, ICT250, IWL220, IWL250 and IWL280"
         d200: "D200"
+        gpos400: GPOS400
+        mp20: MP20
     communication:
       paragraph_1: Common local network (Ethernet)
       paragraph_2: Landline/dial-up (PPP)
@@ -2779,7 +2783,7 @@ en:
     first_launch:
       description: "Procedure for setting up the device after installing the CloudWalk Framework."
       title: "CloudWalk Framework - First launch"
-      after_install: "Now that CloudWalk Framework has already been installed on the device, the next step is to perform the <a href='/en/framework/first-launch'>first launch</a> configuration."
+      after_install: "Now that the CloudWalk Framework has already been installed on the device, the next step is to perform the <a href='/en/framework/first-launch'>first launch</a> configuration."
       integration:
         paragraph_1: "Now that the device is activated, the next step is to perform an HTTP integration test. Click <a href='/en/integration/http'>here</a> to start the process."
       prerequisites:
@@ -3189,6 +3193,28 @@ en:
         step_1: "Before issuing XCB commands, it is helpful to know what emulator/device instances are connected to the XCB server. You can generate a list of attached emulators/devices using the devices command:"
         step_2: "Use the serial mode to connect the emulator or device"
         step_3: "Install the application package:"
+    gertec:
+      title: CloudWalk Framework - Gertec
+      description: Step by step process of installing the CloudWalk Framework for Gertec.
+      introduction: This guide will walk you through the process of installing the CloudWalk Framework on Gertec terminals . Be aware of the prerequisites and follow the installation process carefully.
+      loading_the_framework:
+        paragraph_1: 'Execute CAPLoader_Tool/CAPLoader_Tool.exe'
+        paragraph_2: 'Select the serial port that was assigned to the Gertec POS'
+        paragraph_3: 'Selecte the file /gertec_gpos_400/os/OS_Update_GPOS400/FW/update_all.mmci on the button [...]'
+        paragraph_4: 'Click on send'
+      preparing_the_device:
+        paragraph_1: Unpack the CloudWalk Framework from the download directory
+        paragraph_2: 'Put the terminal in download mode, turn on the device and the following screen will be displayed:'
+        paragraph_3: 'Follow the steps below:<br/> -   Press 0<br/> - Select option 1. Download AP<br/> - Select RS232 or USB'
+        paragraph_4: The terminal is now on download mode.
+      prerequisites:
+        cable: <strong>Cable:</strong> 5 pin USB
+        operating_system: <strong>Operating System:</strong> Microsoft Windows XP SP3 or higher (Vista, 7, etc.)
+        software: "<strong>CAPLoader_Tool</strong>, available in the framework package."
+      table_of_contents:
+        loading_the_framework: Loading the framework on the device
+        preparing_the_device: Preparing the device
+        prerequisites: Prerequisites
   manager:
     apps:
       description: The concept of Application in the CloudWalk Manager defines the applications available for use by devices. How to submit an application in 3 steps.
