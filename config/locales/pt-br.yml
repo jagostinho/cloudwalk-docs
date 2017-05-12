@@ -3198,10 +3198,11 @@ pt-BR:
       description: Processo passo a passo de instalação do CloudWalk Framework no terminal Gertec.
       introduction: Este guia o conduzirá através do processo de instalação do CloudWalk Framework em terminais Gertec. Atente-se aos pré-requisitos e siga o processo de instalação com atenção.
       loading_the_framework:
-        paragraph_1: 'Executar CAPLoader_Tool/CAPLoader_Tool.exe'
-        paragraph_2: 'Selecione a porta serial a qual foi atribuida ao POS Gertec'
-        paragraph_3: 'Selecione o arquivo /gertec_gpos_400/os/OS_Update_GPOS400/FW/update_all.mmci no botão [...]'
-        paragraph_4: 'Clique em enviar'
+        paragraph_1: 'Executar Gertec_PIN_pad_Driver_Installer.exe para instalar o driver dos dispositivos Gertec.'
+        paragraph_2: 'Executar CAPLoader_Tool.exe'
+        paragraph_3: 'Selecione a porta serial a qual foi atribuida ao POS Gertec'
+        paragraph_4: 'Selecione o arquivo <strong>update_all.mmci</strong> no botão [...]'
+        paragraph_5: 'Clique em enviar'
       preparing_the_device:
         paragraph_1: Descompacte o pacote do CloudWalk Framework baixado em um diretório de sua preferência
         paragraph_2: 'Coloque o terminal em modo de download, ao ligar o mesmo a tela abaixo será apresentada:'
@@ -3210,7 +3211,8 @@ pt-BR:
       prerequisites:
         cable: <strong>Cabo:</strong> Cabo USB padrão 5 pinos
         operating_system: <strong>Sistema operacional:</strong> Microsoft Windows XP SP3 ou superior (Vista, Seven, etc)
-        software: "<strong>CAPLoader_Tool</strong>, disponivel no pacote do framework"
+        software: "<strong>CAPLoader_Tool:</strong> disponivel no pacote do framework"
+        driver: "<strong>Driver Gertec:</strong> para Windows, disponivel no pacote do framework."
       table_of_contents:
         loading_the_framework: Efetuando a carga no terminal POS
         preparing_the_device: Preparando o terminal POS
